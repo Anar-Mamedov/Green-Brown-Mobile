@@ -124,7 +124,7 @@
   display: flex;
 }
 .card-of-product .coffee_cup img {
-  margin-right: -6px;
+  margin-right: -10px;
   width: 30px;
 }
 .card-of-product .coffee_cup img:last-child {
