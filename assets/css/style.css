@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+p {
+  margin-bottom: 0 !important;
+}
+
 .card_slider_swipper html,
 .card_slider_swipper body {
   position: relative;
@@ -206,7 +210,7 @@
   transition: 0.3s;
 }
 .card-of-product .shop_icon img {
-  width: 60% !important;
+  width: 60%;
 }
 .card-of-product .shop_icon:hover {
   width: 42px;
