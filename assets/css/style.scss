@@ -153,4 +153,91 @@
             font-weight: 500;
         }
     }
+    .card_price{
+        sup{
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0px;
+                top: 8px;
+                width: 43px;
+                right: 0;
+                border-top: 3px solid;
+                border-color: red;
+                transform:rotate(-5deg);
+            }
+        }
+        
+    }
+    .shop_buttons{
+        width: 100px;
+        height: 45px;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        align-content:center;
+      }
+      .favorite_icon {
+        cursor: pointer;
+        margin-bottom: 0rem;
+        margin-right: 3px;
+        input {
+            + {
+                .like_button1231 {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    width: 31px;
+                    height: 31px;
+                    transition: all .2s ease-out;
+                    background-color: #45726e;
+                    &:hover {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        width: 41px;
+                        height: 41px;
+                    }
+                }
+            }
+            &:checked {
+                + {
+                    .like_button1231 {
+                        background-color: rgb(175, 0, 0);
+                    }
+                }
+            }
+        }
+        img{
+            width: 60%;
+        }
+    }
+    .shop_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background: #45726e;
+        border-radius: 50%;
+        transition: 0.3s;
+        img {
+            width: 60% !important;
+        }
+        &:hover {
+            width: 42px;
+            height: 42px;
+            background-color: #432222;
+        }
+    }
+    
+    
 }
