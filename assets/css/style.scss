@@ -1,8 +1,12 @@
 *{
     font-family: 'Poppins', sans-serif !important;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+p{
+    margin-bottom: 0 !important;
 }
 
 
@@ -96,7 +100,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 10px ;
     }
     .star_icon{
         width: 30px;
@@ -110,15 +114,15 @@
         align-items: center;
         justify-content: center;
         p{
-            margin-top: 4px;
+            margin-top: 4px ;
             font-size: 10px;
             color: #fff;
         }
     }
     .product_name{
         line-height: 2px;
-        margin: 0;
-        padding: 10px;
+        margin: 0 ;
+        padding: 10px ;
         font-size: 16px;
         font-weight: 200;
         strong{
@@ -127,15 +131,15 @@
     }
     .text_of_product{
         line-height: 15px;
-        margin: 0;
-        padding: 0px 0px 0px 10px;
+        margin: 0 ;
+        padding: 0px 0px 0px 10px ;
         font-size: 12px;
         font-weight: 250;
     }
     .coffee_cup{
         display: flex;
         img{
-            margin-right: -10px;
+            margin-right: -10px ;
             width: 30px;
             &:last-child{
                 opacity: 40%;
@@ -147,7 +151,7 @@
         width: 71px;
         justify-content: center;
         align-items: center;
-        padding-left: 10px;
+        padding-left: 10px ;
         p{
             color: #fff;
             font-weight: 500;
@@ -180,8 +184,8 @@
       }
       .favorite_icon {
         cursor: pointer;
-        margin-bottom: 0rem;
-        margin-right: 3px;
+        margin-bottom: 0rem ;
+        margin-right: 3px ;
         input {
             + {
                 .like_button1231 {
@@ -230,7 +234,7 @@
         border-radius: 50%;
         transition: 0.3s;
         img {
-            width: 60% !important;
+            width: 60% ;
         }
         &:hover {
             width: 42px;
