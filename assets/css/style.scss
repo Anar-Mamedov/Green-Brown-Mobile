@@ -6,7 +6,7 @@
 }
 
 p{
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 
@@ -87,6 +87,7 @@ p{
         p{
             color: #fff;
             font-weight: 500;
+            font-size: 14px;
         }
     }
     .card-top-buttons{
@@ -94,13 +95,16 @@ p{
         width: 45px;
         flex-direction: column;
         align-items: center;
+        div{
+            margin-bottom: 10px;
+        }
     }
     .share_button{
         width: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px ;
+        // margin-bottom: 10px ;
     }
     .star_icon{
         width: 30px;
@@ -155,6 +159,7 @@ p{
         p{
             color: #fff;
             font-weight: 500;
+            font-size: 14px;
         }
     }
     .card_price{
@@ -200,7 +205,7 @@ p{
                     height: 31px;
                     transition: all .2s ease-out;
                     background-color: #45726e;
-                    &:hover {
+                    /* &:hover {
                         display: -webkit-box;
                         display: -ms-flexbox;
                         display: flex;
@@ -209,7 +214,7 @@ p{
                         justify-content: center;
                         width: 41px;
                         height: 41px;
-                    }
+                    } */
                 }
             }
             &:checked {
