@@ -6,7 +6,7 @@
 }
 
 p {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 .card_slider_swipper html,
@@ -76,6 +76,7 @@ p {
 .card-of-product .product-weight p {
   color: #fff;
   font-weight: 500;
+  font-size: 14px;
 }
 .card-of-product .card-top-buttons {
   display: flex;
@@ -83,12 +84,14 @@ p {
   flex-direction: column;
   align-items: center;
 }
+.card-of-product .card-top-buttons div {
+  margin-bottom: 10px;
+}
 .card-of-product .share_button {
   width: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
 }
 .card-of-product .star_icon {
   width: 30px;
@@ -144,6 +147,7 @@ p {
 .card-of-product .discound_shape p {
   color: #fff;
   font-weight: 500;
+  font-size: 14px;
 }
 .card-of-product .card_price sup::before {
   position: absolute;
@@ -182,16 +186,16 @@ p {
   height: 31px;
   transition: all 0.2s ease-out;
   background-color: #45726e;
-}
-.card-of-product .favorite_icon input + .like_button1231:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 41px;
-  height: 41px;
+  /* &:hover {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 41px;
+      height: 41px;
+  } */
 }
 .card-of-product .favorite_icon input:checked + .like_button1231 {
   background-color: rgb(175, 0, 0);
