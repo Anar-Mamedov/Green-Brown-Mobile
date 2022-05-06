@@ -7421,7 +7421,7 @@ td, th {
     padding: 0
 }
 
-p {
+section[name="slayder"] p {
     margin-bottom: 1.6em
 }
 
@@ -11594,7 +11594,7 @@ h2.tp-subtitle a, h2.tp-subtitle a:visited, .tp-subtitle h2 a, .tp-subtitle h2 a
 .site-content {
     margin-top: 0;
     margin-bottom: 0;
-    background-image: url(https://www.sliderrevolution.com/wp-content/uploads/2020/07/rockybgfooter.jpg);
+    /* background-image: url(https://www.sliderrevolution.com/wp-content/uploads/2020/07/rockybgfooter.jpg); */
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain
