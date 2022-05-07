@@ -13,32 +13,28 @@ p{
 //  Demo styles slayder
 .card_slider_swipper {
 
-    html,
-      body {
+    html {
         position: relative;
         height: 100%;
-      }
-
-      body {
+    }
+    body {
+        position: relative;
+        height: 100%;
         background: #eee;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         color: #000;
         margin: 0;
         padding: 0;
-      }
-
-      .swiper {
+    }
+    .swiper {
         width: 100%;
         height: 100%;
-      }
-
-      .swiper-slide {
+    }
+    .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
-
-        /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -51,14 +47,14 @@ p{
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
 }
 
 
@@ -95,6 +91,10 @@ p{
         width: 45px;
         flex-direction: column;
         align-items: center;
+        img{
+            width: 17px;
+            object-fit: contain;
+        }
         div{
             margin-bottom: 10px;
         }
@@ -129,6 +129,7 @@ p{
         padding: 10px ;
         font-size: 16px;
         font-weight: 200;
+        text-align: left;
         strong{
             font-weight: 600;
         }
@@ -139,6 +140,7 @@ p{
         padding: 0px 0px 0px 10px ;
         font-size: 12px;
         font-weight: 250;
+        text-align: left;
     }
     .coffee_cup{
         display: flex;
@@ -152,7 +154,7 @@ p{
     }
     .discound_shape{
         display: flex;
-        width: 71px;
+        width: 62px;
         justify-content: center;
         align-items: center;
         padding-left: 10px ;
@@ -227,6 +229,7 @@ p{
         }
         img{
             width: 60%;
+            object-fit: contain;
         }
     }
     .shop_icon {
@@ -240,6 +243,7 @@ p{
         transition: 0.3s;
         img {
             width: 60% ;
+            object-fit: contain;
         }
         &:hover {
             width: 42px;
