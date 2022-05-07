@@ -9,12 +9,13 @@ p {
   margin-bottom: 0;
 }
 
-.card_slider_swipper html,
-.card_slider_swipper body {
+.card_slider_swipper html {
   position: relative;
   height: 100%;
 }
 .card_slider_swipper body {
+  position: relative;
+  height: 100%;
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -30,7 +31,6 @@ p {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -84,6 +84,10 @@ p {
   flex-direction: column;
   align-items: center;
 }
+.card-of-product .card-top-buttons img {
+  width: 17px;
+  object-fit: contain;
+}
 .card-of-product .card-top-buttons div {
   margin-bottom: 10px;
 }
@@ -116,6 +120,7 @@ p {
   padding: 10px;
   font-size: 16px;
   font-weight: 200;
+  text-align: left;
 }
 .card-of-product .product_name strong {
   font-weight: 600;
@@ -126,6 +131,7 @@ p {
   padding: 0px 0px 0px 10px;
   font-size: 12px;
   font-weight: 250;
+  text-align: left;
 }
 .card-of-product .coffee_cup {
   display: flex;
@@ -139,7 +145,7 @@ p {
 }
 .card-of-product .discound_shape {
   display: flex;
-  width: 71px;
+  width: 62px;
   justify-content: center;
   align-items: center;
   padding-left: 10px;
@@ -202,6 +208,7 @@ p {
 }
 .card-of-product .favorite_icon img {
   width: 60%;
+  object-fit: contain;
 }
 .card-of-product .shop_icon {
   display: flex;
@@ -215,6 +222,7 @@ p {
 }
 .card-of-product .shop_icon img {
   width: 60%;
+  object-fit: contain;
 }
 .card-of-product .shop_icon:hover {
   width: 42px;
