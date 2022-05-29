@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6{
 
 //  çok satan ürün slayderi
 .card_slider_swipper {
+  height: 497px;
 
     html {
         position: relative;
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5, h6{
         width: 100%;
         height: 100%;
     }
+
     .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -52,6 +54,9 @@ h1, h2, h3, h4, h5, h6{
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        &.swiper-slide-next{
+          z-index: -1;
+        }
         img {
             display: block;
             width: 100%;
@@ -78,6 +83,9 @@ h1, h2, h3, h4, h5, h6{
         height: 211px;
         background: url(/assets/images/orn-mockup.png);
     }
+    .action_button{
+      margin-bottom: 10px;
+    }
     .product-weight{
         display: flex;
         justify-content: center;
@@ -100,9 +108,6 @@ h1, h2, h3, h4, h5, h6{
         img{
             width: 17px;
             object-fit: contain;
-        }
-        div{
-            margin-bottom: 10px;
         }
     }
     .share_button{
@@ -284,6 +289,13 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 100% 100% 0 0 / 14% 14% 0 0;
   -webkit-transition: bottom 0.5s ease;
   transition: bottom 0.5s ease;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .backdrop-blur {
+    background-color: rgba(255, 255, 255, .5);
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
 }
 
 .botmu1a .mainMenuOverlay.open {
@@ -527,7 +539,7 @@ h1, h2, h3, h4, h5, h6{
 // kategori slayderi
 
 .category_slider{
-  margin-bottom: 15px;
+  margin-bottom: 0;
   html {
     position: relative;
     height: 100%;
@@ -643,7 +655,8 @@ section[name="test"]{
       background-size: cover;
       width: 280px;
       height: 280px;
-      border-radius: 100%;
+      border-radius: 50%;
+      overflow: hidden;
     }
   }
 
@@ -663,4 +676,72 @@ section[name="test"]{
     to {
     transform: rotate(360deg)
     }
+}
+
+
+
+// ürün paylaş butonu ana sayfa
+
+
+.share_button{
+  width: 14.05px;
+  height: 17.56px;
+  background: transparent;
+  // float: right;
+  // margin-top: 15px;
+  // margin-right: 15px;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+.share_button img:hover {
+  transform: scale(1.3) !important;
+  transition: all 400ms ease;
+}
+.card_slider .owl-stage-outer{
+  height: 450px !important;
+  padding-top: 50px;
+}
+.share_button .sm-wrapper {
+  position: absolute;
+  display: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  // top: -4px;
+  // left: 240px;
+  z-index: 999999999;
+  cursor: default;
+  transform: translate(40%, -12%);
+}
+
+.share_button .sm-wrapper .sm-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.share_button .sm-wrapper .sm-icon:hover {
+  transform: scale(1.1);
+}
+
+.share_button .sm-wrapper .sm-icon:nth-child(1) {
+  background: #179cf0;
+  top: 4px;
+  left: calc(90px - 55px - 16px);
+}
+
+.share_button .sm-wrapper .sm-icon:nth-child(2) {
+  background: #4167b2;
+  right: 0;
+  top: calc(90px - 55px - 16px);
+}
+
+.share_button .sm-wrapper .sm-icon:nth-child(3) {
+  background: #27b53e;
+  bottom: 3px;
+  left: calc(90px - 35px - 16px);
 }
