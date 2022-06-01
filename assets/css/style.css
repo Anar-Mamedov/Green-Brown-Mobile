@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
 .card_slider_swipper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -581,6 +580,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #45726e;
 }
+.category_header span {
+  text-decoration: underline;
+  font-weight: 500;
+}
 
 .category_card {
   width: 75px;
@@ -605,6 +608,7 @@ section[name=test] {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 330px;
 }
 section[name=test] a {
   position: absolute;
