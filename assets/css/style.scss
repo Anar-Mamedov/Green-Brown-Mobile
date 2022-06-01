@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6{
     .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #fff;
+        // background: #fff;
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -605,6 +605,10 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
     color: #45726e;
   }
+  span{
+    text-decoration: underline;
+    font-weight: 500;
+  }
 }
 
 // kategori kartları
@@ -635,6 +639,7 @@ section[name="test"]{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 330px;
   
     a{
       position: absolute;
