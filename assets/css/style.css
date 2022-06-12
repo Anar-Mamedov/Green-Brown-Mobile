@@ -707,4 +707,49 @@ section[name=test] .product_rotate {
   left: 39px;
 }
 
+section[name=card] html,
+section[name=card] body {
+  position: relative;
+  height: 100%;
+}
+section[name=card] body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+section[name=card] .swiper {
+  width: 100%;
+  height: 100%;
+}
+section[name=card] .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+section[name=card] .swiper-slide img {
+  display: block;
+  width: 90%;
+  /* height: 100%; */
+  margin-bottom: 40px;
+  object-fit: cover;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -2463,6 +2463,22 @@
         </section>
     </div>
     
+    <section name="card">
+        <div class="category_header" style="margin-top: 10px; margin-bottom: 15px;">
+            <div></div>
+            <h1>GREEN BROWN</h1> <span>CARD</span>
+        </div>
+        <div class="swiper card-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/assets/images/card-1.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/images/card-1.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/images/card-1.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/images/card-1.webp" alt=""></div>
+                <div class="swiper-slide"><img src="/assets/images/card-1.webp" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
     
     <section class="botmu1a">
@@ -2520,6 +2536,17 @@
           },
         });
       </script>
+
+<script>
+    var swiper = new Swiper(".card-carousel", {
+        slidesPerView: 1.3,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
