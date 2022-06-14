@@ -77,6 +77,9 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 28px;
     background: #fff;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+    .card_text_area{
+      padding-top: 10px;
+    }
     .product-picture{
         border-radius: 28px 28px 0px 0px;
         width: 100%;
@@ -751,6 +754,9 @@ section[name="test"]{
   left: calc(90px - 35px - 16px);
 }
 
+
+// green brown kart bölümü
+
 section[name="card"]{
   html,
       body {
@@ -801,4 +807,231 @@ section[name="card"]{
         border-radius: 15px 15px 15px 15px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
+}
+
+
+// ürün kartı - 1
+
+.card-of-product1{
+  margin-bottom: 50px;
+  width: 262px;
+  height: 381px;
+  border-radius: 28px;
+  background: #44726e;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  .card_text_area{
+    padding-top: 10px;
+    h1{
+      color: rgb(255, 255, 255);
+    }
+    p{
+      color: #fff;
+    }
+    b{
+      color: #fff;
+    }
+    sup{
+      color: #fff;
+    }
+  }
+  .product-picture{
+      border-radius: 28px 28px 0px 0px;
+      width: 100%;
+      height: 211px;
+      background: url(/assets/images/orn-mockup.png);
+  }
+  .action_button{
+    margin-bottom: 10px;
+  }
+  .product-weight{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 58px;
+      border-radius: 28px 0px 38px 0px;
+      background-color: #45726e;
+      p{
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+      }
+  }
+  .card-top-buttons{
+      display: flex;
+      width: 45px;
+      flex-direction: column;
+      align-items: center;
+      img{
+          width: 17px;
+          object-fit: contain;
+      }
+  }
+  .share_button{
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // margin-bottom: 10px ;
+  }
+  .star_icon{
+      width: 30px;
+      height: 30px;
+      background: url(/assets/images/Icon-star.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-x: center;
+      background-position-y: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+          margin-top: 4px ;
+          font-size: 10px;
+          color: #fff;
+      }
+  }
+  .product_name{
+      line-height: 2px;
+      margin: 0 ;
+      padding: 10px ;
+      font-size: 16px;
+      font-weight: 200;
+      text-align: left;
+      strong{
+          font-weight: 600;
+      }
+  }
+  .text_of_product{
+      line-height: 15px;
+      margin: 0 ;
+      padding: 0px 0px 0px 10px ;
+      font-size: 12px;
+      font-weight: 250;
+      text-align: left;
+  }
+  .coffee_cup{
+      display: flex;
+      img{
+          margin-right: -10px ;
+          width: 30px;
+          &:last-child{
+              opacity: 40%;
+          }
+      }
+  }
+  .discound_shape{
+      display: flex;
+      width: 62px;
+      justify-content: center;
+      align-items: center;
+      padding-left: 10px ;
+      p{
+          color: #44726e;
+          font-weight: 500;
+          font-size: 14px;
+      }
+  }
+  .card_price{
+      sup{
+          &::before{
+              position: absolute;
+              content: "";
+              left: 0px;
+              top: 8px;
+              width: 43px;
+              right: 0;
+              border-top: 3px solid;
+              border-color: red;
+              transform:rotate(-5deg);
+          }
+      }
+      
+  }
+  .shop_buttons{
+      width: 100px;
+      height: 45px;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      align-content:center;
+    }
+    .favorite_icon {
+      cursor: pointer;
+      margin-bottom: 0rem ;
+      margin-right: 3px ;
+      input {
+          + {
+              .like_button1231 {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  border-radius: 50%;
+                  width: 31px;
+                  height: 31px;
+                  transition: all .2s ease-out;
+                  background-color: #fff;
+                  align-items: center;
+                  path{
+                    fill: #44726e;
+                  }
+                  /* &:hover {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      width: 41px;
+                      height: 41px;
+                  } */
+              }
+          }
+          &:checked {
+              + {
+                  .like_button1231 {
+                      background-color: rgb(175, 0, 0);
+                      path{
+                        fill: #fff;
+                      }
+                  }
+              }
+          }
+      }
+      img{
+          width: 60%;
+          object-fit: contain;
+      }
+  }
+  .shop_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.3s;
+      svg{
+        width: 45%;
+      }
+      path{
+        fill: #44726e;
+      }
+      img {
+          width: 60% ;
+          object-fit: contain;
+      }
+      &:hover {
+          width: 42px;
+          height: 42px;
+          background-color: #432222;
+      }
+  }
+  
+  
 }

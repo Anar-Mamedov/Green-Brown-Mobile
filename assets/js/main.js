@@ -49,4 +49,18 @@ $(document).on("click", function (event) {
   if ($(event.target).closest('.card-of-product .share_button').length === 0) {
     $('.card-of-product .sm-wrapper:visible').toggle('show')
   } 
-});
+})
+
+// yeşil kartların paylaş butonu için
+
+$('.card-of-product1 .share_button').on('click', function() {
+  $('.card-of-product1 .sm-wrapper:visible').toggle('show')
+  $(this).parents('.card-of-product1').find('.sm-wrapper:hidden').toggle('show')
+})
+
+$(document).on("click", function (event) {
+  if ($(event.target).closest('.card-of-product1 .share_button').length === 0) {
+    $('.card-of-product1 .sm-wrapper:visible').toggle('show')
+  } 
+})
+;
