@@ -64,6 +64,8 @@ $(document).on("click", function (event) {
   } 
 })
 
+
+// Urun puanlama
 const coffeeCupContainers = $('.coffee_cup')
 coffeeCupContainers.each(function() {
   const selectedCups = $(this).attr('data-selected')
@@ -78,7 +80,6 @@ coffeeCupContainers.each(function() {
   })
 })
 
-// Urun puanlama
 $(document).on('click', '.coffee_cup img', function() {
   const currImage = $(this)
   const imagesContainer = currImage.parents('.coffee_cup')
