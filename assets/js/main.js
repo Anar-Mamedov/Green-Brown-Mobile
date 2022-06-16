@@ -63,4 +63,31 @@ $(document).on("click", function (event) {
     $('.card-of-product1 .sm-wrapper:visible').toggle('show')
   } 
 })
-;
+
+const coffeeCupContainers = $('.coffee_cup')
+coffeeCupContainers.each(function() {
+  const selectedCups = $(this).attr('data-selected')
+  if (selectedCups === undefined) return false
+  
+  const cups = $(this).children()
+  
+  cups.each(function(idx) {
+    if (idx === +selectedCups) return false
+    const cup = $(this)
+    cup.css('opacity', 1)
+  })
+})
+
+// Urun puanlama
+$(document).on('click', '.coffee_cup img', function() {
+  const currImage = $(this)
+  const imagesContainer = currImage.parents('.coffee_cup')
+  const isCurrImageSelected = +currImage.css('opacity') === 1
+
+  currImage.css('opacity', isCurrImageSelected ? 0.4 : 1)
+  currImage.prevUntil().css('opacity', 1)
+  currImage.nextUntil().css('opacity', 0.4)
+
+  const totalSelected = currImage.prevUntil().length + (isCurrImageSelected ? 0 : 1)
+  imagesContainer.attr('data-selected', totalSelected)
+})
