@@ -246,6 +246,52 @@ h1, h2, h3, h4, h5, h6{
             object-fit: contain;
         }
     }
+    .bell-ring{
+      line-height: 12px;
+      margin-bottom: 8px;
+    }
+    .ring_checkbox {
+      cursor: pointer;
+      margin-bottom: 0rem ;
+      // margin-right: 3px ;
+      input {
+          + {
+              .bell-ring1231 {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  transition: all .3s ease-out;
+                  /* background-color: #45726e; */
+                  /* &:hover {
+                      display: -webkit-box;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      justify-content: center;
+                      width: 41px;
+                      height: 41px;
+                  } */
+              }
+          }
+          &:checked {
+              + {
+                  .bell-ring1231 {
+                      path{
+                        stroke: rgb(175, 0, 0);
+                      }
+                  }
+              }
+          }
+      }
+      img{
+          width: 60%;
+          object-fit: contain;
+      }
+  }
     .shop_icon {
         display: flex;
         justify-content: center;
@@ -1007,6 +1053,52 @@ section[name="card"]{
           object-fit: contain;
       }
   }
+  .bell-ring{
+    line-height: 12px;
+    margin-bottom: 8px;
+  }
+  .ring_checkbox {
+    cursor: pointer;
+    margin-bottom: 0rem ;
+    // margin-right: 3px ;
+    input {
+        + {
+            .bell-ring1231 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                transition: all .3s ease-out;
+                /* background-color: #45726e; */
+                /* &:hover {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    width: 41px;
+                    height: 41px;
+                } */
+            }
+        }
+        &:checked {
+            + {
+                .bell-ring1231 {
+                    path{
+                      stroke: rgb(175, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+    img{
+        width: 60%;
+        object-fit: contain;
+    }
+}
   .shop_icon {
       display: flex;
       justify-content: center;
