@@ -154,8 +154,6 @@ h1, h2, h3, h4, h5, h6 {
 .card-of-product .coffee_cup img {
   margin-right: -10px;
   width: 30px;
-}
-.card-of-product .coffee_cup img:last-child {
   opacity: 40%;
 }
 .card-of-product .discound_shape {
@@ -894,8 +892,6 @@ section[name=card] .swiper-slide img {
 .card-of-product1 .coffee_cup img {
   margin-right: -10px;
   width: 30px;
-}
-.card-of-product1 .coffee_cup img:last-child {
   opacity: 40%;
 }
 .card-of-product1 .discound_shape {
