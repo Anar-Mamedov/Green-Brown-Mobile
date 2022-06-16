@@ -64,6 +64,7 @@ $(document).on("click", function (event) {
   } 
 })
 
+// Urun puanlama
 const coffeeCupContainers = $('.coffee_cup')
 coffeeCupContainers.each(function() {
   const selectedCups = $(this).attr('data-selected')
@@ -78,14 +79,22 @@ coffeeCupContainers.each(function() {
   })
 })
 
-// Urun puanlama
 $(document).on('click', '.coffee_cup img', function() {
   const currImage = $(this)
   const imagesContainer = currImage.parents('.coffee_cup')
   const isCurrImageSelected = +currImage.css('opacity') === 1
 
-  currImage.css('opacity', isCurrImageSelected ? 0.4 : 1)
+  const hasSelectedImagesAfter = currImage.nextUntil().filter(() => +$(this).css('opacity') === 1).length > 0
+  const hasSelectedImagesBefore = currImage.prevUntil().length > 0
+
   currImage.prevUntil().css('opacity', 1)
+
+  currImage.css('opacity', (
+    (isCurrImageSelected && !hasSelectedImagesAfter)) 
+      ? 0.4 
+      : 1
+  )
+
   currImage.nextUntil().css('opacity', 0.4)
 
   const totalSelected = currImage.prevUntil().length + (isCurrImageSelected ? 0 : 1)
