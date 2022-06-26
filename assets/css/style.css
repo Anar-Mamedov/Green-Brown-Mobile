@@ -1029,6 +1029,21 @@ section[name=card] .swiper-slide img {
   background-color: #432222;
 }
 
+.music_slider {
+  position: relative;
+}
+.music_slider .watermark {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  bottom: -26px;
+}
+.music_slider .watermark img {
+  width: 180px;
+  opacity: 15%;
+}
+
 .music_area {
   height: 246px;
   width: 365px;
@@ -1282,6 +1297,17 @@ section[name=card] .swiper-slide img {
   height: auto;
   background-size: cover;
   background-position: center;
+}
+
+.top_header {
+  padding: 0 5% 0 5%;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.top_header a img {
+  width: 110px;
 }
 
 /*# sourceMappingURL=style.css.map */

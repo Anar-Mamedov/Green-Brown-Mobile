@@ -1126,6 +1126,23 @@ section[name="card"]{
 
 // müzik bölümü
 
+.music_slider{
+  position: relative;
+    .watermark{
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      width: 100%;
+      bottom: -26px;
+      img{
+        width: 180px;
+        opacity: 15%;
+      }
+    }
+}
+
+
+
 .music_area{
   height: 246px;
   width: 365px;
@@ -1206,6 +1223,7 @@ section[name="card"]{
 
 
 // music swiper
+
 
 .music_carousel{
       height: 325px;
@@ -1413,5 +1431,21 @@ section[name="card"]{
     height: auto;
     background-size: cover;
     background-position: center;
+  }
+}
+
+
+// headerdeki logo
+
+.top_header{
+  padding: 0 5% 0 5%;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  a{
+    img{
+      width: 110px;
+    }
   }
 }
