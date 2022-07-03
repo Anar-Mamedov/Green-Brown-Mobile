@@ -1159,6 +1159,10 @@ section[name=card] .swiper-slide img {
   object-fit: cover;
 }
 
+.video_slayder {
+  margin-top: 20px;
+}
+
 .video_carousel {
   height: 450px;
 }
@@ -1243,10 +1247,11 @@ section[name=card] .swiper-slide img {
 .footer .footer_background {
   background: url(/assets/images/shape_footer.png);
   background-color: #004D3F;
-  height: 300px;
+  height: auto;
   width: 100%;
   background-size: cover;
   background-position: center;
+  padding-bottom: 20px;
 }
 .footer .footer_background h1 {
   font-size: 16px;
@@ -1258,8 +1263,37 @@ section[name=card] .swiper-slide img {
   color: #fff;
   font-weight: 300;
 }
+.footer .footer_background .text_area_fotter {
+  display: flex;
+  justify-content: space-around;
+}
 .footer .footer_background .adress_text {
   padding: 10px;
+  max-width: 223px;
+}
+.footer .footer_background .link_textbox {
+  padding: 10px;
+}
+.footer .footer_background .social_media_icon {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer_background .social_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.315);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+}
+.footer .footer_background .social_icon i {
+  color: #fff;
+  font-size: 14px;
 }
 .footer .line1 {
   display: flex;
@@ -1308,6 +1342,50 @@ section[name=card] .swiper-slide img {
 }
 .top_header a img {
   width: 110px;
+}
+
+.magazine {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.magazine .magazine_bg {
+  background-image: url(/assets/images/sfondo-chicchi.jpg);
+  width: 300px;
+  height: 430px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.magazine .magazine_bg img {
+  height: 73%;
+}
+
+.blog {
+  width: 365px;
+  height: 219.5px;
+  border-radius: 18px;
+  box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.16);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.blog h1 {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.8;
+  font-weight: 200;
+  text-align: left;
+  background-color: green;
+  max-width: 335px;
+  border-radius: 6px;
+  padding: 0 7px 0 5px;
+  border-left: 10px solid #b71a1a;
+  bottom: 65px;
+  left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

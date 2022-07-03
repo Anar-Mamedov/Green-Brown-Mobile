@@ -1275,6 +1275,9 @@ section[name="card"]{
       }
 }
 
+.video_slayder{
+  margin-top: 20px;
+}
 .video_carousel{
   height: 450px;
   html,
@@ -1374,10 +1377,11 @@ section[name="card"]{
   .footer_background{
     background: url(/assets/images/shape_footer.png);
     background-color: #004D3F;
-    height: 300px;
+    height: auto;
     width: 100%;
     background-size: cover;
     background-position: center;
+    padding-bottom: 20px;
     h1{
       font-size: 16px;
       color: #fff;
@@ -1388,8 +1392,37 @@ section[name="card"]{
       color: #fff;
       font-weight: 300;
     }
+    .text_area_fotter{
+      display: flex;
+    justify-content: space-around;
+    }
     .adress_text{
       padding: 10px;
+      max-width: 223px;
+    }
+    .link_textbox{
+      padding: 10px;
+    }
+    .social_media_icon{
+      margin-top: 15px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .social_icon{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.315);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 7px;
+      i{
+        color: #fff;
+        font-size: 14px;
+      }
     }
   }
   .line1{
@@ -1448,4 +1481,57 @@ section[name="card"]{
       width: 110px;
     }
   }
+}
+
+
+// green brown magazine bölümü 
+
+.magazine{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .magazine_bg{
+    background-image: url(/assets/images/sfondo-chicchi.jpg);
+    width: 300px;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      // width: 60%;
+      height: 73%;
+    }
+  }
+}
+
+
+
+// blog bölümü
+
+.blog{
+    width: 365px;
+    height: 219.5px;
+    border-radius: 18px;
+    box-shadow: 4px 10px 6px rgb(0 0 0 / 16%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    h1{
+      position: absolute;
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.8;
+      font-weight: 200;
+      text-align: left;
+
+      background-color: green;
+      max-width: 335px;
+      border-radius: 6px;
+      padding: 0 7px 0 5px;
+      border-left: 10px solid #b71a1a;
+      bottom: 65px;
+      left: 10px;
+    }
 }
