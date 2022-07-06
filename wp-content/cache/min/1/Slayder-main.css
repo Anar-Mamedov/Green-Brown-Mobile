@@ -7956,9 +7956,9 @@ a {
     transition: all 0.35s ease-in-out
 }
 
-a:hover, a:focus {
+/* a:hover, a:focus {
     color: #269bd1
-}
+} */
 
 a:active {
     outline: 0
@@ -8534,10 +8534,10 @@ a:active {
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-    border: 0 solid #e9ecef;
-    background-color: #269bd1;
-    color: #fff;
-    padding: .7rem 1rem
+    /* border: 0 solid #e9ecef; */
+    /* background-color: #269bd1; */
+    /* color: #fff; */
+    /* padding: .7rem 1rem */
 }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
@@ -11689,14 +11689,14 @@ body.single-templates .site-content .tp-aftercontent {
 }
 
 a {
-    color: #1c0950;
+    /* color: #1c0950; */
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out
 }
 
-a:hover, a:focus {
+/* a:hover, a:focus {
     color: #f7345e
-}
+} */
 
 .entry-content a, .entry-content a:visited {
     color: #f7345e;
@@ -12341,16 +12341,16 @@ input[type="text"]:focus::placeholder, input[type="email"]:focus::placeholder, i
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-    font-size: 18px;
-    line-height: 50px;
-    font-weight: 500;
-    letter-spacing: 0;
-    text-transform: capitalize;
-    border: 0;
-    border-radius: 25px;
-    background-color: #f7345e;
-    color: #fff;
-    padding: 0 50px
+    /* font-size: 18px; */
+    /* line-height: 50px; */
+    /* font-weight: 500; */
+    /* letter-spacing: 0; */
+    /* text-transform: capitalize; */
+    /* border: 0; */
+    /* border-radius: 25px; */
+    /* background-color: #f7345e; */
+    /* color: #fff; */
+    /* padding: 0 50px */
 }
 
 button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
@@ -14199,11 +14199,11 @@ fakespace.headerspace {
 }
 
 a:hover, a:focus, .tg-primary-menu > div ul li:hover > a, .tg-primary-menu > div ul li.current_page_item > a, .tg-primary-menu > div ul li.current-menu-item > a, .tg-mobile-navigation > div ul li.current_page_item > a, .tg-mobile-navigation > div ul li.current-menu-item > a, .entry-content a, .tg-meta-style-two .entry-meta span, .tg-meta-style-two .entry-meta a {
-    color: #f7345e
+    /* color: #f7345e */
 }
 
 .tg-primary-menu.tg-primary-menu--style-underline > div > ul > li.current_page_item > a::before, .tg-primary-menu.tg-primary-menu--style-underline > div > ul > li.current-menu-item > a::before, .tg-primary-menu.tg-primary-menu--style-left-border > div > ul > li.current_page_item > a::before, .tg-primary-menu.tg-primary-menu--style-left-border > div > ul > li.current-menu-item > a::before, .tg-primary-menu.tg-primary-menu--style-right-border > div > ul > li.current_page_item > a::before, .tg-primary-menu.tg-primary-menu--style-right-border > div > ul > li.current-menu-item > a::before, .tg-scroll-to-top:hover, button, input[type="button"], input[type="reset"], input[type="submit"], .tg-primary-menu > div ul li.tg-header-button-wrap a {
-    background-color: #f7345e
+    /* background-color: #f7345e */
 }
 
 body {

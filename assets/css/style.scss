@@ -1476,11 +1476,71 @@ section[name="card"]{
   height: 45px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  top: 0;
   a{
+    color: unset;
     img{
       width: 110px;
     }
+    :hover{
+      color: unset;
+    }
   }
+  i{
+    font-size: 14px;
+    color: #585955;
+  }
+  .header_right{
+    display: flex;
+    gap: 13px;
+  }
+  button{
+    background-color: unset;
+    padding: unset;
+    line-height: unset;
+    color: #000;
+    border-radius: unset;
+    :active{
+      color: #b71a1a;
+    }
+  }
+}
+.modal_close{
+  background-color: #b71a1a;
+  padding: 6px 10px 6px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+      :hover{
+        color: white;
+    }
+  
+}
+.modal_main{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    button{
+      background-color: #efae20;
+      border-radius: 12px 12px 12px 12px;
+      padding: 6px 10px 6px 10px;
+      width: 200px;
+    }
+    button:active{
+        background-color: #b71a1a;
+        color: #fff;
+        border-radius: 12px 12px 12px 12px;
+        padding: 6px 10px 6px 10px;
+        width: 200px;
+      }
 }
 
 
@@ -1534,4 +1594,83 @@ section[name="card"]{
       bottom: 65px;
       left: 10px;
     }
+}
+
+
+
+// -------------------------------ürün detay sayfası--------------------------------
+
+//ürün detay slayder
+
+.product_detail_carousel {
+  .swiper-button-prev:after{
+    font-size: 20px;
+    transform: translate(-13px, 0px);
+  }
+  .swiper-button-next:after{
+    font-size: 20px;
+    transform: translate(13px, 0px);
+  }
+  .product_photo_Detail_page {
+    width: 100%;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+  }
+    svg{
+      transform: translate(0px, -358px);
+      z-index: 8;
+      position: relative;
+      height: auto;
+      width: 30px;
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    }
+}
+
+
+
+// ürün sayısını artırma
+
+.prosuct_count_area{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  top: -106px;
+  z-index: 3;
+  margin-bottom: -90px;
+  .prosuct_count{
+    width: 60px;
+    height: 110px;
+    background-color: #494658;
+    border-radius: 18px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    input {
+      text-align: center;
+      font-size: 14px;
+      line-height: 0px;
+      padding: 5px 0 5px 0;
+      width: 30px;
+      height: 30px;
+      background-color: #7f7997;
+      border: 0;
+      color: #fff;
+    }
+    button {
+      display: flex;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 0px;
+      background-color: #2f2c3e;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
