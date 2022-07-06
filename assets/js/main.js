@@ -85,9 +85,9 @@ $(document).on('click', '.coffee_cup img', function() {
   const imagesContainer = currImage.parents('.coffee_cup')
   const isCurrImageSelected = +currImage.css('opacity') === 1
 
-  currImage.css('opacity', isCurrImageSelected ? 0.4 : 1)
+  currImage.css('opacity', isCurrImageSelected ? 0.3 : 1)
   currImage.prevUntil().css('opacity', 1)
-  currImage.nextUntil().css('opacity', 0.4)
+  currImage.nextUntil().css('opacity', 0.3)
 
   const totalSelected = currImage.prevUntil().length + (isCurrImageSelected ? 0 : 1)
   imagesContainer.attr('data-selected', totalSelected)
