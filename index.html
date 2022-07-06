@@ -10,7 +10,7 @@
     <meta name="author" content="Green Brown">
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +35,9 @@
         src='wp-content/plugins/revslider/public/assets/js/rs6.minff3c.js?ver=6.5.15' async id='revmin-js'></script>
     <!-- slayder css link son -->
 
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- css ve scss -->
@@ -44,12 +47,30 @@
   <body>
 
     <div class="top_header">
-        <a href="">
+        <a href="/index.html">
             <img src="/assets/images/GREEN_BROWN_WEB_LOGO.svg" alt="">
         </a>
+        <div class="header_right">
+            <button><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+            <button><a href=""><i class="fa-solid fa-heart"></i></a></button>
+        <!-- Modal HTML embedded directly into document -->
+        <div id="ex1" class="modal">
+            <div class="modal_main">
+                <a href=""><button>Giriş Yap</button></a>
+                <a href=""><button>Üye Ol</button></a>
+                
+                <a class="modal_close" href="#" rel="modal:close">Kapat</a>
+            </div>
+            
+        </div>
+  
+        <!-- Link to open the modal -->
+        <button><a href="#ex1" rel="modal:open"><i class="fa-solid fa-user"></i></a></button>
+        </div>
+        
     </div>
 
-    <section name="slayder" style="margin-bottom: 20px;">
+    <section name="slayder" style="margin-bottom: 20px; margin-top: 45px;">
         <main id="main" class="site-main" style="opacity: 1;">
             <div id="content" class="site-content">
                 <div id="rs-fullblock">
@@ -1714,7 +1735,7 @@
                         <input type="checkbox" style="display: none;">
                         <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                     </label>
-                    <a href="product-details.html">
+                    <a href="product_detail.html">
                         <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                     </a>
                 </div>
@@ -1813,7 +1834,7 @@
                                 <input type="checkbox" style="display: none;">
                                 <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                             </label>
-                            <a href="product-details.html">
+                            <a href="product_detail.html">
                                 <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                             </a>
                         </div>
@@ -1904,7 +1925,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                                 
@@ -1997,7 +2018,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2089,7 +2110,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2181,7 +2202,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2273,7 +2294,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2365,7 +2386,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2457,7 +2478,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2549,7 +2570,7 @@
                                     <input type="checkbox" style="display: none;">
                                     <div class="like_button1231"><img src="/assets/images/Iconly-Heart.svg" alt=""></div>
                                 </label>
-                                <a href="product-details.html">
+                                <a href="product_detail.html">
                                     <div class="shop_icon"><img src="/assets/images/Iconly-Bag.svg" alt=""></div>
                                 </a>
                             </div>
@@ -2689,7 +2710,7 @@
                                           </svg>
                                           </div>
                                     </label>
-                                    <a href="product-details.html">
+                                    <a href="product_detail.html">
                                         <div class="shop_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20.725" height="21.927" viewBox="0 0 20.725 21.927">
                                             <path id="Combined-Shape" d="M10.35,0a5.371,5.371,0,0,1,5.332,4.8h.079c1.534,0,3.4,1.019,4.029,3.877l.835,6.462A5.98,5.98,0,0,1,19.51,20.1a6.035,6.035,0,0,1-4.737,1.825H5.939c-2.268,0-3.847-.556-4.831-1.7s-1.317-2.862-.981-5.1L.949,8.75C1.488,5.826,3.462,4.8,4.99,4.8A5.365,5.365,0,0,1,10.327,0Zm5.411,6.391H4.99c-.467,0-2.026.188-2.474,2.605L1.7,15.346c-.266,1.781-.06,3.07.612,3.85S4.161,20.34,5.939,20.34h8.834a4.644,4.644,0,0,0,3.537-1.277,4.5,4.5,0,0,0,.743-3.706l-.824-6.4C17.877,7.375,16.95,6.391,15.761,6.391ZM13.436,9.337a.815.815,0,0,1,.818.794.773.773,0,0,1-.769.794h-.049a.794.794,0,1,1,0-1.587Zm-6.169,0a.815.815,0,0,1,.818.794.774.774,0,0,1-.77.794H7.267a.794.794,0,0,1,0-1.587Zm3.08-7.75h-.016A3.775,3.775,0,0,0,6.592,4.8h7.491A3.784,3.784,0,0,0,10.346,1.588Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
                                           </svg>
@@ -2787,7 +2808,7 @@
                                           </svg>
                                           </div>
                                     </label>
-                                    <a href="product-details.html">
+                                    <a href="product_detail.html">
                                         <div class="shop_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20.725" height="21.927" viewBox="0 0 20.725 21.927">
                                             <path id="Combined-Shape" d="M10.35,0a5.371,5.371,0,0,1,5.332,4.8h.079c1.534,0,3.4,1.019,4.029,3.877l.835,6.462A5.98,5.98,0,0,1,19.51,20.1a6.035,6.035,0,0,1-4.737,1.825H5.939c-2.268,0-3.847-.556-4.831-1.7s-1.317-2.862-.981-5.1L.949,8.75C1.488,5.826,3.462,4.8,4.99,4.8A5.365,5.365,0,0,1,10.327,0Zm5.411,6.391H4.99c-.467,0-2.026.188-2.474,2.605L1.7,15.346c-.266,1.781-.06,3.07.612,3.85S4.161,20.34,5.939,20.34h8.834a4.644,4.644,0,0,0,3.537-1.277,4.5,4.5,0,0,0,.743-3.706l-.824-6.4C17.877,7.375,16.95,6.391,15.761,6.391ZM13.436,9.337a.815.815,0,0,1,.818.794.773.773,0,0,1-.769.794h-.049a.794.794,0,1,1,0-1.587Zm-6.169,0a.815.815,0,0,1,.818.794.774.774,0,0,1-.77.794H7.267a.794.794,0,0,1,0-1.587Zm3.08-7.75h-.016A3.775,3.775,0,0,0,6.592,4.8h7.491A3.784,3.784,0,0,0,10.346,1.588Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
                                           </svg>
@@ -2885,7 +2906,7 @@
                                           </svg>
                                           </div>
                                     </label>
-                                    <a href="product-details.html">
+                                    <a href="product_detail.html">
                                         <div class="shop_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20.725" height="21.927" viewBox="0 0 20.725 21.927">
                                             <path id="Combined-Shape" d="M10.35,0a5.371,5.371,0,0,1,5.332,4.8h.079c1.534,0,3.4,1.019,4.029,3.877l.835,6.462A5.98,5.98,0,0,1,19.51,20.1a6.035,6.035,0,0,1-4.737,1.825H5.939c-2.268,0-3.847-.556-4.831-1.7s-1.317-2.862-.981-5.1L.949,8.75C1.488,5.826,3.462,4.8,4.99,4.8A5.365,5.365,0,0,1,10.327,0Zm5.411,6.391H4.99c-.467,0-2.026.188-2.474,2.605L1.7,15.346c-.266,1.781-.06,3.07.612,3.85S4.161,20.34,5.939,20.34h8.834a4.644,4.644,0,0,0,3.537-1.277,4.5,4.5,0,0,0,.743-3.706l-.824-6.4C17.877,7.375,16.95,6.391,15.761,6.391ZM13.436,9.337a.815.815,0,0,1,.818.794.773.773,0,0,1-.769.794h-.049a.794.794,0,1,1,0-1.587Zm-6.169,0a.815.815,0,0,1,.818.794.774.774,0,0,1-.77.794H7.267a.794.794,0,0,1,0-1.587Zm3.08-7.75h-.016A3.775,3.775,0,0,0,6.592,4.8h7.491A3.784,3.784,0,0,0,10.346,1.588Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
                                           </svg>
@@ -2983,7 +3004,7 @@
                                           </svg>
                                           </div>
                                     </label>
-                                    <a href="product-details.html">
+                                    <a href="product_detail.html">
                                         <div class="shop_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20.725" height="21.927" viewBox="0 0 20.725 21.927">
                                             <path id="Combined-Shape" d="M10.35,0a5.371,5.371,0,0,1,5.332,4.8h.079c1.534,0,3.4,1.019,4.029,3.877l.835,6.462A5.98,5.98,0,0,1,19.51,20.1a6.035,6.035,0,0,1-4.737,1.825H5.939c-2.268,0-3.847-.556-4.831-1.7s-1.317-2.862-.981-5.1L.949,8.75C1.488,5.826,3.462,4.8,4.99,4.8A5.365,5.365,0,0,1,10.327,0Zm5.411,6.391H4.99c-.467,0-2.026.188-2.474,2.605L1.7,15.346c-.266,1.781-.06,3.07.612,3.85S4.161,20.34,5.939,20.34h8.834a4.644,4.644,0,0,0,3.537-1.277,4.5,4.5,0,0,0,.743-3.706l-.824-6.4C17.877,7.375,16.95,6.391,15.761,6.391ZM13.436,9.337a.815.815,0,0,1,.818.794.773.773,0,0,1-.769.794h-.049a.794.794,0,1,1,0-1.587Zm-6.169,0a.815.815,0,0,1,.818.794.774.774,0,0,1-.77.794H7.267a.794.794,0,0,1,0-1.587Zm3.08-7.75h-.016A3.775,3.775,0,0,0,6.592,4.8h7.491A3.784,3.784,0,0,0,10.346,1.588Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
                                           </svg>
@@ -3081,7 +3102,7 @@
                                           </svg>
                                           </div>
                                     </label>
-                                    <a href="product-details.html">
+                                    <a href="product_detail.html">
                                         <div class="shop_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20.725" height="21.927" viewBox="0 0 20.725 21.927">
                                             <path id="Combined-Shape" d="M10.35,0a5.371,5.371,0,0,1,5.332,4.8h.079c1.534,0,3.4,1.019,4.029,3.877l.835,6.462A5.98,5.98,0,0,1,19.51,20.1a6.035,6.035,0,0,1-4.737,1.825H5.939c-2.268,0-3.847-.556-4.831-1.7s-1.317-2.862-.981-5.1L.949,8.75C1.488,5.826,3.462,4.8,4.99,4.8A5.365,5.365,0,0,1,10.327,0Zm5.411,6.391H4.99c-.467,0-2.026.188-2.474,2.605L1.7,15.346c-.266,1.781-.06,3.07.612,3.85S4.161,20.34,5.939,20.34h8.834a4.644,4.644,0,0,0,3.537-1.277,4.5,4.5,0,0,0,.743-3.706l-.824-6.4C17.877,7.375,16.95,6.391,15.761,6.391ZM13.436,9.337a.815.815,0,0,1,.818.794.773.773,0,0,1-.769.794h-.049a.794.794,0,1,1,0-1.587Zm-6.169,0a.815.815,0,0,1,.818.794.774.774,0,0,1-.77.794H7.267a.794.794,0,0,1,0-1.587Zm3.08-7.75h-.016A3.775,3.775,0,0,0,6.592,4.8h7.491A3.784,3.784,0,0,0,10.346,1.588Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
                                           </svg>
@@ -3174,7 +3195,7 @@
                           </svg>
                           </div>
                     </label>
-                    <a href="product-details.html">
+                    <a href="product_detail.html">
                         <div class="shop_icon"><svg xmlns="http://www.w3.org/2000/svg" width="20.725" height="21.927" viewBox="0 0 20.725 21.927">
                             <path id="Combined-Shape" d="M10.35,0a5.371,5.371,0,0,1,5.332,4.8h.079c1.534,0,3.4,1.019,4.029,3.877l.835,6.462A5.98,5.98,0,0,1,19.51,20.1a6.035,6.035,0,0,1-4.737,1.825H5.939c-2.268,0-3.847-.556-4.831-1.7s-1.317-2.862-.981-5.1L.949,8.75C1.488,5.826,3.462,4.8,4.99,4.8A5.365,5.365,0,0,1,10.327,0Zm5.411,6.391H4.99c-.467,0-2.026.188-2.474,2.605L1.7,15.346c-.266,1.781-.06,3.07.612,3.85S4.161,20.34,5.939,20.34h8.834a4.644,4.644,0,0,0,3.537-1.277,4.5,4.5,0,0,0,.743-3.706l-.824-6.4C17.877,7.375,16.95,6.391,15.761,6.391ZM13.436,9.337a.815.815,0,0,1,.818.794.773.773,0,0,1-.769.794h-.049a.794.794,0,1,1,0-1.587Zm-6.169,0a.815.815,0,0,1,.818.794.774.774,0,0,1-.77.794H7.267a.794.794,0,0,1,0-1.587Zm3.08-7.75h-.016A3.775,3.775,0,0,0,6.592,4.8h7.491A3.784,3.784,0,0,0,10.346,1.588Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
                           </svg>
