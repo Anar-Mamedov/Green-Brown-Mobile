@@ -1485,7 +1485,7 @@ section[name=card] .swiper-slide img {
   margin-bottom: -135px;
 }
 .prosuct_count_area .prosuct_count {
-  width: 60px;
+  width: 42px;
   height: 110px;
   background-color: #005d4c;
   border-radius: 18px 18px 18px 18px;
@@ -1571,14 +1571,14 @@ section[name=card] .swiper-slide img {
 }
 .addtocard_price .card_price {
   position: absolute;
-  top: 24px;
-  left: 5px;
+  top: 20px;
+  left: 17px;
   z-index: 3;
 }
 .addtocard_price button {
   position: absolute;
   z-index: 3;
-  right: 5px;
+  right: 17px;
   top: 14px;
   border-radius: 15px 15px 15px 15px;
   padding: 5px 8px 5px 8px;
