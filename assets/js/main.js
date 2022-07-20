@@ -64,6 +64,19 @@ $(document).on("click", function (event) {
   } 
 })
 
+// ürün detay sayfası paylaş butonu için
+
+$('.share_and_favorite_button .share_button').on('click', function() {
+  $('.share_and_favorite_button .sm-wrapper:visible').toggle('show')
+  $(this).parents('.share_and_favorite_button').find('.sm-wrapper:hidden').toggle('show')
+})
+
+$(document).on("click", function (event) {
+  if ($(event.target).closest('.share_and_favorite_button .share_button').length === 0) {
+    $('.share_and_favorite_button .sm-wrapper:visible').toggle('show')
+  } 
+})
+
 
 // Urun puanlama
 const coffeeCupContainers = $('.coffee_cup')

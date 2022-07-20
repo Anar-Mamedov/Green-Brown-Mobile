@@ -1465,7 +1465,7 @@ section[name=card] .swiper-slide img {
   background-size: cover;
   background-position: center;
 }
-.product_detail_carousel svg {
+.product_detail_carousel .left_right_arrow {
   transform: translate(0px, -358px);
   z-index: 8;
   position: relative;
@@ -1618,6 +1618,113 @@ section[name=card] .swiper-slide img {
 }
 .favorite_products .card-of-product {
   margin-bottom: 15px;
+}
+
+.share_and_favorite_button .card-top-buttons {
+  display: flex;
+  width: 45px;
+  flex-direction: column;
+  align-items: center;
+}
+.share_and_favorite_button .card-top-buttons img {
+  width: 17px;
+  object-fit: contain;
+}
+.share_and_favorite_button .action_button {
+  margin-bottom: 10px;
+}
+.share_and_favorite_button .share_button {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.share_and_favorite_button .bell-ring {
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+.share_and_favorite_button .ring_checkbox {
+  cursor: pointer;
+  margin-bottom: 0rem;
+}
+.share_and_favorite_button .ring_checkbox input + .bell-ring1231 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  /* background-color: #45726e; */
+  /* &:hover {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: 41px;
+          height: 41px;
+      } */
+}
+.share_and_favorite_button .ring_checkbox input:checked + .bell-ring1231 path {
+  stroke: rgb(175, 0, 0);
+}
+.share_and_favorite_button .ring_checkbox img {
+  width: 60%;
+  object-fit: contain;
+}
+.share_and_favorite_button .star_icon {
+  width: 30px;
+  height: 30px;
+  background: url(/assets/images/Icon-star.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share_and_favorite_button .star_icon p {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #fff;
+}
+.share_and_favorite_button .favorite_icon {
+  cursor: pointer;
+  margin-bottom: 0rem;
+  margin-right: 3px;
+}
+.share_and_favorite_button .favorite_icon input + .like_button1231 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  transition: all 0.2s ease-out;
+  background-color: #45726e;
+  /* &:hover {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 41px;
+      height: 41px;
+  } */
+}
+.share_and_favorite_button .favorite_icon input:checked + .like_button1231 {
+  background-color: rgb(175, 0, 0);
+}
+.share_and_favorite_button .favorite_icon img {
+  width: 60%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */
