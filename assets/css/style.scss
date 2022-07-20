@@ -1617,7 +1617,7 @@ section[name="card"]{
     background-size: cover;
     background-position: center;
   }
-    svg{
+    .left_right_arrow{
       transform: translate(0px, -358px);
       z-index: 8;
       position: relative;
@@ -1783,4 +1783,148 @@ section[name="card"]{
   .card-of-product{
     margin-bottom: 15px;
   }
+}
+
+// ürün detay sayfası paylaş çan favorit gibi butonlar
+
+.share_and_favorite_button {
+
+  .card-top-buttons {
+    display: flex;
+    width: 45px;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 17px;
+      object-fit: contain;
+    }
+  }
+
+  .action_button {
+    margin-bottom: 10px;
+  }
+
+  .share_button {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: 10px ;
+  }
+
+  .bell-ring {
+    line-height: 12px;
+    margin-bottom: 8px;
+  }
+
+  .ring_checkbox {
+    cursor: pointer;
+    margin-bottom: 0rem;
+
+    // margin-right: 3px ;
+    input {
+      + {
+        .bell-ring1231 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          transition: all .3s ease-out;
+          /* background-color: #45726e; */
+          /* &:hover {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  width: 41px;
+                  height: 41px;
+              } */
+        }
+      }
+
+      &:checked {
+        + {
+          .bell-ring1231 {
+            path {
+              stroke: rgb(175, 0, 0);
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      width: 60%;
+      object-fit: contain;
+    }
+  }
+
+  .star_icon {
+    width: 30px;
+    height: 30px;
+    background: url(/assets/images/Icon-star.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin-top: 4px;
+      font-size: 10px;
+      color: #fff;
+    }
+  }
+
+  .favorite_icon {
+    cursor: pointer;
+    margin-bottom: 0rem ;
+    margin-right: 3px ;
+    input {
+        + {
+            .like_button1231 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 31px;
+                height: 31px;
+                transition: all .2s ease-out;
+                background-color: #45726e;
+                /* &:hover {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    width: 41px;
+                    height: 41px;
+                } */
+            }
+        }
+        &:checked {
+            + {
+                .like_button1231 {
+                    background-color: rgb(175, 0, 0);
+                }
+            }
+        }
+    }
+    img{
+        width: 60%;
+        object-fit: contain;
+    }
+}
+
 }
