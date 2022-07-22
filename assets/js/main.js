@@ -105,3 +105,21 @@ $(document).on('click', '.coffee_cup img', function() {
   const totalSelected = currImage.prevUntil().length + (isCurrImageSelected ? 0 : 1)
   imagesContainer.attr('data-selected', totalSelected)
 })
+
+// login sayfasındakı tab yapısı için
+
+$('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})
+    
