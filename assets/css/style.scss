@@ -1928,3 +1928,185 @@ section[name="card"]{
 }
 
 }
+
+
+// login sayfası tabs yapısı
+
+.login_page{
+  *{
+    margin:0;
+    padding:0;
+    
+  }
+  body{ background:url('https://westfieldcc.files.wordpress.com/2011/10/simple-blur-ipad-background.jpg') no-repeat center center fixed;
+     background-size: cover;
+  }
+  .wrapper {
+    // margin:100px auto;
+    width:100%;
+    font-family:sans-serif;
+    color:#98927C;
+    font-size:14px;
+    line-height:24px;
+    // max-width:600px;
+    min-width:340px;
+    overflow:hidden;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    background: #004d3f;
+    gap: 5px;
+    li {
+      list-style:none;
+      float:left;
+      width: 50%;
+    }
+    a {
+      display:flex;
+      text-align:center;
+      text-decoration:none;
+      position:relative;
+      // text-transform:uppercase;
+      color:#fff;
+      // height:45px;
+      // line-height:90px;
+      background:rgb(12 117 92);;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 7px 7px 0 0;
+      padding: 10px 10px 10px 10px;
+      
+      &:hover, &.active {
+         background:rgb(255, 255, 255);
+         color:#004d3f;
+      }
+      
+      // &:before{
+      //   content:'';
+      //   position:absolute;
+      //   z-index:11;
+      //   left:100%;
+      //   top:-100%;
+      //   height:70px;
+      //   line-height:90px;
+      //   width:0;
+      //   border-bottom: 70px solid rgba(0,0,0,.1);
+      //   border-right: 7px solid transparent;
+      // }
+      // &.active:before{
+      //   content:'';
+      //   position:absolute;
+      //   z-index:11;
+      //   left:100%;
+      //   top:-100%;
+      //   height:70px;
+      //   line-height:90px;
+      //   width:0;
+      //   border-bottom: 70px solid rgba(0,0,0,.2);
+      //   border-right: 20px solid transparent;
+      // }
+      // &:last-child:before, &.active:last-child:before{
+      //   border: none;
+      // }
+    }
+  }
+  .tabgroup {
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,.1);;
+    div {
+      padding:30px;
+      background:#ffffff;
+      box-shadow:0 3px 10px rgba(0,0,0,.3);
+    }
+  }
+  .clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+
+  // inputlar kısmı mail şifre yazmaq için
+  .login_side {
+    .q-input {
+      background-color: #f8f8f8;
+      font-size: 12px;
+      border: 1px solid #e6e6e6;
+      // width: inherit;
+      border-radius: 3px;
+      height: 40px;
+      padding: 10px;
+      color: #666;
+      font-weight: 400;
+      -webkit-appearance: none;
+
+      &::placeholder {
+        color: #666;
+      }
+
+      &:focus {
+        background-color: #f8f8f8;
+        font-size: 12px;
+        border: 1px solid #e6e6e6;
+        // width: inherit;
+        border-radius: 3px;
+        height: 40px;
+        padding: 10px;
+        font-weight: 400;
+        color: #666;
+        -webkit-appearance: none;
+
+        &::placeholder {
+          color: #666;
+        }
+      }
+    }
+    .button{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 10px 10px 10px;
+      padding: 7px 0 7px 0;
+      background: #004d3f;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      width: 100%;
+      &:active{
+        background: #007c5d;
+      }
+    }
+  }
+  
+  
+  
+}
+
+
+
+
+// geri buttonu js ile yazıldı
+.gobackbutton{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff00;
+  &:hover{
+    background: #ffffff00;
+  }
+  svg {
+    fill: rgb(255, 255, 255);
+  }
+  &:active{
+    svg{
+      fill: rgb(182, 0, 0);
+    }
+  }
+}
