@@ -123,3 +123,72 @@ $('.tabs a').click(function(e){
   
 })
     
+// üye olurken cinsiyet seçimi butonları için class ismi ekleme ve kaldırma
+
+$('#female').click(function(){
+  if ($(this).addClass("active")) {
+    $('#man').removeClass('active');
+  }
+});
+$('#man').click(function(){
+  if ($(this).addClass("active")) {
+    $('#female').removeClass('active');
+  }
+});
+
+// ürünleri satın alırken adet kaç adet seçimi için ürün sayaç
+
+$('.button-minus').click(function(){
+  const el = $(this)
+  const input = el.parents('.prosuct_count').find('input:text')
+  const minusBtn = el.parents('.prosuct_count').find('.button-minus')
+  const plusBtn = el.parents('.prosuct_count').find('.button-plus')
+
+  const num = parseInt(input.val());
+  if (num > 1) {
+    input.val(num - 1);
+  }
+  if (num == 2) {
+    minusBtn.prop('disabled', true);
+  }
+  if (num == 10) {
+    plusBtn.prop('disabled', false);
+  }
+});
+
+$('.button-plus').click(function(){
+  const el = $(this)
+  const input = el.parents('.prosuct_count').find('input:text')
+  const minusBtn = el.parents('.prosuct_count').find('.button-minus')
+  const plusBtn = el.parents('.prosuct_count').find('.button-plus')
+  
+  const num = parseInt(input.val());
+  console.log(num);
+  if (num < 10) {
+    input.val(num + 1);
+  }
+  if (num > 0) {
+    minusBtn.prop('disabled', false);
+  }
+  if (num == 9) {
+    plusBtn.prop('disabled', true);
+  }
+});
+
+// Ürün detay sayfası gramaj seçimi için class ismi ekleme ve silme
+
+$('.250gr').click(function(){
+  if ($(this).addClass("active")) {
+    $('.350gr, .500gr').removeClass('active');
+  }
+});
+$('.350gr').click(function(){
+  if ($(this).addClass("active")) {
+    $('.250gr, .500gr').removeClass('active');
+  }
+});
+$('.500gr').click(function(){
+  if ($(this).addClass("active")) {
+    $('.250gr, .350gr').removeClass('active');
+  }
+});
