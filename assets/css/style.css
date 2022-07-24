@@ -1334,17 +1334,20 @@ section[name=card] .swiper-slide img {
 }
 
 .top_header {
-  padding: 0 5% 0 5%;
+  padding: 0 15px 0 15px;
   width: 100%;
   height: 45px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #ffffff;
   position: fixed;
   z-index: 99;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   top: 0;
+  align-content: center;
+}
+.top_header:last-child {
+  margin-left: 100px;
 }
 .top_header a {
   color: unset;
@@ -1360,6 +1363,8 @@ section[name=card] .swiper-slide img {
   color: #585955;
 }
 .top_header .header_right {
+  position: absolute;
+  right: 15px;
   display: flex;
   gap: 13px;
 }
@@ -1880,6 +1885,25 @@ section[name=card] .swiper-slide img {
   fill: rgb(255, 255, 255);
 }
 .gobackbutton:active svg {
+  fill: rgb(182, 0, 0);
+}
+
+.gobackbutton1 {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+}
+.gobackbutton1:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.gobackbutton1 svg {
+  fill: rgb(68, 114, 110);
+}
+.gobackbutton1:active svg {
   fill: rgb(182, 0, 0);
 }
 

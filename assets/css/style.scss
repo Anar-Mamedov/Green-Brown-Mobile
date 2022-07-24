@@ -1471,17 +1471,21 @@ section[name="card"]{
 // headerdeki logo
 
 .top_header{
-  padding: 0 5% 0 5%;
+  padding: 0 15px 0 15px;
   width: 100%;
   height: 45px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   background-color: #ffffff;
   position: fixed;
   z-index: 99;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   top: 0;
+  align-content: center;
+  &:last-child{
+    margin-left: 100px;
+  }
   a{
     color: unset;
     img{
@@ -1496,6 +1500,8 @@ section[name="card"]{
     color: #585955;
   }
   .header_right{
+    position: absolute;
+    right: 15px;
     display: flex;
     gap: 13px;
   }
@@ -2140,6 +2146,27 @@ section[name="card"]{
   }
   svg {
     fill: rgb(255, 255, 255);
+  }
+  &:active{
+    svg{
+      fill: rgb(182, 0, 0);
+    }
+  }
+}
+
+.gobackbutton1{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff00;
+  &:hover{
+    background: #ffffff00;
+  }
+  svg {
+    fill: rgb(68 114 110);;
   }
   &:active{
     svg{
