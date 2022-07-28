@@ -217,3 +217,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// sepetten ürün silme tuşu
+
+function removeDummy() {
+  var elem = document.getElementById('dummy');
+  elem.parentNode.removeChild(elem);
+  return false;
+}
