@@ -2631,7 +2631,7 @@ section[name="card"] {
 
   .prosuct_count {
     width: 110px;
-    height: 42px;
+    height: 30px;
     background-color: #005d4c;
     border-radius: 18px 18px 18px 18px;
     display: flex;
@@ -2677,4 +2677,18 @@ section[name="card"] {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.delete_product_from_cart {
+  background: transparent;
+  font-size: 15px;
+  color: #004D3F;
+
+  &:hover {
+    background: transparent;
+  }
+
+  &:active {
+    color: #b71a1a;
+  }
 }
