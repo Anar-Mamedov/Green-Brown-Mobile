@@ -2110,7 +2110,7 @@ section[name=card] .swiper-slide img {
 }
 .cart .prosuct_count {
   width: 110px;
-  height: 42px;
+  height: 30px;
   background-color: #005d4c;
   border-radius: 18px 18px 18px 18px;
   display: flex;
@@ -2153,6 +2153,18 @@ section[name=card] .swiper-slide img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.delete_product_from_cart {
+  background: transparent;
+  font-size: 15px;
+  color: #004D3F;
+}
+.delete_product_from_cart:hover {
+  background: transparent;
+}
+.delete_product_from_cart:active {
+  color: #b71a1a;
 }
 
 /*# sourceMappingURL=style.css.map */
