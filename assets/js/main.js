@@ -123,7 +123,7 @@ $('.tabs a').click(function (e) {
 
 })
 
-// üye olurken cinsiyet seçimi butonları için class ismi ekleme ve kaldırma
+// ------------- üye olurken cinsiyet seçimi butonları için class ismi ekleme ve kaldırma ------------
 
 $('#female').click(function () {
   if ($(this).addClass("active")) {
@@ -136,7 +136,7 @@ $('#man').click(function () {
   }
 });
 
-// ürünleri satın alırken adet kaç adet seçimi için ürün sayaç
+// ----------- ürünleri satın alırken adet kaç adet seçimi için ürün sayaç ---------------
 
 $('.button-minus').click(function () {
   const el = $(this)
@@ -175,7 +175,7 @@ $('.button-plus').click(function () {
   }
 });
 
-// Ürün detay sayfası gramaj seçimi için class ismi ekleme ve silme
+// --------- Ürün detay sayfası gramaj seçimi için class ismi ekleme ve silme ----------
 
 $('.250gr').click(function () {
   if ($(this).addClass("active")) {
@@ -192,3 +192,28 @@ $('.500gr').click(function () {
     $('.250gr, .350gr').removeClass('active');
   }
 });
+
+
+// -------------- sayfanın en başına dönmek için buton ---------------
+
+// düğmeyi seç
+var mybutton = document.getElementById("myBtn");
+
+// Sayfanın üst kısmından 20 piksel aşağı kaydırdığında düğmeyi göster
+window.onscroll = function () {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// düğmeye tıkladığında sayfanın en üstüne gidin
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
