@@ -62,7 +62,10 @@
             <img src="/assets/images/GREEN_BROWN_WEB_LOGO.svg" alt="">
         </a>
         <div class="header_right">
-            <button><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></button>
+            <button style="position: relative;"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span
+                        style="position: absolute;background: #005e4c;border-radius: 50%;line-height: 6px;padding: 5px;font-size: 11px;color: #ffffff;top: -4px;right: -10px;"
+                        class="number_of_product_cart"></span>
+                </a></button>
             <button><a href="/favorite_products.html"><i class="fa-solid fa-heart"></i></a></button>
             <!-- Modal HTML embedded directly into document -->
             <div id="ex1" class="modal" style="z-index: 5;">
@@ -85,11 +88,11 @@
     <div style="margin-top: 45px;" class="cart">
         <div class="product-in-cart">
             <div class="cart_header">
-                <p>Sepetim</p>
-                <div>(2)</div>
+                <p>Sepetim:</p>
+                <div class="number_of_product_cart"></div>
             </div>
-            <div id="dummy"
-                style="padding: 5px 0 10px 0;display: flex;flex-direction: row;align-content: center;align-items: center;border-bottom: 1px solid #e6e6e6;">
+            <div class="dummy"
+                style="padding: 10px 0 13px 0;display: flex;flex-direction: row;align-content: center;align-items: center;border-bottom: 1px solid #e6e6e6;">
                 <div class="product_photo_cart">
                     <img src="/assets/images/kazandiran-urun.webp" alt="">
                 </div>
@@ -97,8 +100,7 @@
                     <div
                         style=" display: flex; flex-direction: row; justify-content: space-between; align-items: center; align-content: center; ">
                         <p><b>Fıstıklı</b> Menengiç</p>
-                        <button type="submit" value="Remove DUMMY" onclick="removeDummy(); "
-                            class="delete_product_from_cart"><i class="fa-solid fa-trash"></i></button>
+                        <button class="delete_product_from_cart removebutton"><i class="fa-solid fa-trash"></i></button>
                     </div>
                     <p
                         style="height: 15px; font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; line-height: 15px;">
@@ -111,7 +113,7 @@
                         <p>250Gr</p>
                     </div>
                     <div style=" display: flex; flex-direction: row; justify-content: space-between; ">
-                        <span>49,00₺</span>
+                        <span>49,90₺</span>
                         <div class="prosuct_count">
                             <button class="button-minus">-</button>
                             <input type="text" readonly="" value="1">
@@ -120,8 +122,8 @@
                     </div>
                 </div>
             </div>
-            <div id="dummy"
-                style="padding: 5px 0 10px 0;display: flex;flex-direction: row;align-content: center;align-items: center;border-bottom: 1px solid #e6e6e6;">
+            <div class="dummy"
+                style="padding: 10px 0 13px 0;display: flex;flex-direction: row;align-content: center;align-items: center;border-bottom: 1px solid #e6e6e6;">
                 <div class="product_photo_cart">
                     <img src="/assets/images/kazandiran-urun.webp" alt="">
                 </div>
@@ -129,8 +131,7 @@
                     <div
                         style=" display: flex; flex-direction: row; justify-content: space-between; align-items: center; align-content: center; ">
                         <p><b>Fıstıklı</b> Menengiç</p>
-                        <button type="submit" value="Remove DUMMY" onclick="removeDummy(); "
-                            class="delete_product_from_cart"><i class="fa-solid fa-trash"></i></button>
+                        <button class="delete_product_from_cart removebutton"><i class="fa-solid fa-trash"></i></button>
                     </div>
                     <p
                         style="height: 15px; font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; line-height: 15px;">
@@ -143,7 +144,38 @@
                         <p>250Gr</p>
                     </div>
                     <div style=" display: flex; flex-direction: row; justify-content: space-between; ">
-                        <span>49,00₺</span>
+                        <span>59,90₺</span>
+                        <div class="prosuct_count">
+                            <button class="button-minus">-</button>
+                            <input type="text" readonly="" value="1">
+                            <button class="button-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dummy"
+                style="padding: 10px 0 13px 0;display: flex;flex-direction: row;align-content: center;align-items: center;border-bottom: 1px solid #e6e6e6;">
+                <div class="product_photo_cart">
+                    <img src="/assets/images/kazandiran-urun.webp" alt="">
+                </div>
+                <div class="content_text">
+                    <div
+                        style=" display: flex; flex-direction: row; justify-content: space-between; align-items: center; align-content: center; ">
+                        <p><b>Fıstıklı</b> Menengiç</p>
+                        <button class="delete_product_from_cart removebutton"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <p
+                        style="height: 15px; font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; line-height: 15px;">
+                        Fıstıklı Menengiç Kahvesi 250g, halk arasında “Melengiç Kahvesi” olarak da bilinmektedir. Özel
+                        aromasıyla yeni tatlar arayanların beğenisini kazanan Fıstıklı Menengiç Kahvesi 250g mutlaka
+                        denemelisiniz.</p>
+                    <div
+                        style=" display: flex; flex-direction: row; align-content: center; align-items: center; gap: 5px;">
+                        <p>Gramaj: </p>
+                        <p>250Gr</p>
+                    </div>
+                    <div style=" display: flex; flex-direction: row; justify-content: space-between; ">
+                        <span>69,90₺</span>
                         <div class="prosuct_count">
                             <button class="button-minus">-</button>
                             <input type="text" readonly="" value="1">
