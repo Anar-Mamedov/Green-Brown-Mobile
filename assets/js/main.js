@@ -150,9 +150,11 @@ $('.button-minus').click(function () {
   }
   if (num == 2) {
     minusBtn.prop('disabled', true);
+    jQuery(minusBtn).css('opacity', '0.4');
   }
   if (num == 10) {
     plusBtn.prop('disabled', false);
+    jQuery(plusBtn).css('opacity', '1');
   }
 });
 
@@ -169,9 +171,11 @@ $('.button-plus').click(function () {
   }
   if (num > 0) {
     minusBtn.prop('disabled', false);
+    jQuery(minusBtn).css('opacity', '1');
   }
   if (num == 9) {
     plusBtn.prop('disabled', true);
+    jQuery(plusBtn).css('opacity', '0.4');
   }
 });
 
