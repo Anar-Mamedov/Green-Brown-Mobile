@@ -219,10 +219,22 @@ function topFunction() {
 }
 
 
-// sepetten ürün silme tuşu
+// sepetten ürün silme tuşu (removebutton clası eklenen butonlar dummy classlı parentini siliyor)
 
-function removeDummy() {
-  var elem = document.getElementById('dummy');
-  elem.parentNode.removeChild(elem);
-  return false;
-}
+$(".removebutton").on("click", function () {
+
+  $(this).parents('.dummy').fadeOut(500, function () {
+    // silerken fadeout effecti için üstteki parents(dummy) yazıldığında effecti dummy class lı dive veriyor 
+    $(this).parents('.dummy').remove();
+  });
+
+});
+
+
+// seppeteki ürün sayısını üste yazdırma
+
+var num = $(".product-in-cart .dummy").length;
+localStorage.setItem("cartnum", num);
+var cartnumm = localStorage.getItem("cartnum");
+console.log(cartnumm);
+$(".number_of_product_cart").text(" " + cartnumm + " ");
