@@ -236,5 +236,5 @@ $(".removebutton").on("click", function () {
 var num = $(".product-in-cart .dummy").length;
 localStorage.setItem("cartnum", num);
 var cartnumm = localStorage.getItem("cartnum");
-console.log(cartnumm);
+// console.log(cartnumm);
 $(".number_of_product_cart").text(" " + cartnumm + " ");
