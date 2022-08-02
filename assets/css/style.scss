@@ -372,7 +372,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: -420px;
-  z-index: 999;
+  z-index: 90;
   height: 420px;
   box-shadow: 0 0 15px -3px #03374a;
   border-radius: 100% 100% 0 0 / 14% 14% 0 0;
@@ -1704,19 +1704,28 @@ section[name="card"] {
   gap: 10px;
   padding-top: 20px;
 
-  button {
+  .login_button_modal {
     background-color: #efae20;
     border-radius: 12px 12px 12px 12px;
     padding: 6px 10px 6px 10px;
     width: 200px;
   }
 
-  button:active {
+  .login_button_modal:active {
     background-color: #b71a1a;
     color: #fff;
     border-radius: 12px 12px 12px 12px;
     padding: 6px 10px 6px 10px;
     width: 200px;
+  }
+
+  .profil_edit_modal {
+    background: transparent;
+    font-size: 12px;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
@@ -2699,5 +2708,74 @@ section[name="card"] {
 
   &:active {
     color: #b71a1a;
+  }
+}
+
+// sepet sayfası indirim kuponu
+
+.discount_coupon {
+  // background: #f6f6f6;
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+
+  input {
+    background-color: #f8f8f8;
+    font-size: 12px;
+    border: 1px solid #e6e6e6;
+    // width: inherit;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    color: #666;
+    font-weight: 400;
+    -webkit-appearance: none;
+
+    &::placeholder {
+      color: #666;
+    }
+
+    &:focus {
+      background-color: #f8f8f8;
+      font-size: 12px;
+      border: 1px solid #e6e6e6;
+      // width: inherit;
+      border-radius: 3px;
+      height: 40px;
+      padding: 10px;
+      font-weight: 400;
+      color: #666;
+      -webkit-appearance: none;
+
+      &::placeholder {
+        color: #666;
+      }
+    }
+  }
+}
+
+.discount_coupon_parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    padding: 7px 0 7px 0;
+    background: #004d3f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+
+    &:active {
+      background: #007c5d;
+    }
+
+    &:hover {}
   }
 }

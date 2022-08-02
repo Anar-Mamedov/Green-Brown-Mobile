@@ -74,8 +74,8 @@
             <!-- Modal HTML embedded directly into document -->
             <div id="ex1" class="modal" style="z-index: 5;">
                 <div class="modal_main">
-                    <a href="login.html"><button>Giriş Yap</button></a>
-                    <a href="login.html"><button>Üye Ol</button></a>
+                    <a href="login.html"><button class="login_button_modal">Giriş Yap</button></a>
+                    <a href="login.html"><button class="login_button_modal">Üye Ol</button></a>
 
                     <a class="modal_close" href="#" rel="modal:close">Kapat</a>
                 </div>
@@ -191,6 +191,14 @@
         </div>
     </div>
 
+    <div class="discount_coupon_parent" style=" padding: 10px; ">
+        <div class="discount_coupon">
+            <p style="font-size: 12px; color: #666;">İndirim Kodu Giriniz</p>
+            <input type="text" value="">
+        </div>
+        <a><button class="button" onclick="window.location.replace(document.referrer);">Kuponu Uygula</button></a>
+    </div>
+
     <div class="addtocard_price">
         <span class="card_price">
             <b style="color: #004d3f;font-size: 18px;">49,99₺</b>
@@ -276,9 +284,7 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
 
                         </div>
                         <div class="card_text_area">

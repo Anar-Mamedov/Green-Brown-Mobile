@@ -297,7 +297,7 @@ h6 {
   left: 0;
   right: 0;
   bottom: -420px;
-  z-index: 999;
+  z-index: 90;
   height: 420px;
   box-shadow: 0 0 15px -3px #03374a;
   border-radius: 100% 100% 0 0/14% 14% 0 0;
@@ -1403,18 +1403,25 @@ section[name=card] .swiper-slide img {
   gap: 10px;
   padding-top: 20px;
 }
-.modal_main button {
+.modal_main .login_button_modal {
   background-color: #efae20;
   border-radius: 12px 12px 12px 12px;
   padding: 6px 10px 6px 10px;
   width: 200px;
 }
-.modal_main button:active {
+.modal_main .login_button_modal:active {
   background-color: #b71a1a;
   color: #fff;
   border-radius: 12px 12px 12px 12px;
   padding: 6px 10px 6px 10px;
   width: 200px;
+}
+.modal_main .profil_edit_modal {
+  background: transparent;
+  font-size: 12px;
+}
+.modal_main .profil_edit_modal:hover {
+  background-color: transparent;
 }
 
 .magazine {
@@ -2171,6 +2178,62 @@ section[name=card] .swiper-slide img {
 }
 .delete_product_from_cart:active {
   color: #b71a1a;
+}
+
+.discount_coupon {
+  padding: 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+.discount_coupon input {
+  background-color: #f8f8f8;
+  font-size: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  color: #666;
+  font-weight: 400;
+  -webkit-appearance: none;
+}
+.discount_coupon input::placeholder {
+  color: #666;
+}
+.discount_coupon input:focus {
+  background-color: #f8f8f8;
+  font-size: 12px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  font-weight: 400;
+  color: #666;
+  -webkit-appearance: none;
+}
+.discount_coupon input:focus::placeholder {
+  color: #666;
+}
+
+.discount_coupon_parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.discount_coupon_parent .button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 7px 0 7px 0;
+  background: #004d3f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+}
+.discount_coupon_parent .button:active {
+  background: #007c5d;
 }
 
 /*# sourceMappingURL=style.css.map */
