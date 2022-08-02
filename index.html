@@ -63,12 +63,23 @@
             <button><a href="/favorite_products.html"><i class="fa-solid fa-heart"></i></a></button>
             <!-- Modal HTML embedded directly into document -->
             <div id="ex1" class="modal">
-                <div class="modal_main">
-                    <a href="login.html"><button>Giriş Yap</button></a>
-                    <a href="login.html"><button>Üye Ol</button></a>
-
+                <!-- Kullanıcı giriş yaptıktan sonra aşağıdakı div gözüksün -->
+                <div class="modal_main" style="align-items: unset;">
+                    <h1 style=" font-size: 14px; font-weight: 500; color: black; align-self: center; ">Hoş Geldin Anar
+                    </h1>
+                    <div style=" display: flex; flex-direction: column; ">
+                        <a href="login.html"><button class="profil_edit_modal">Kullanıcı Bilgileri</button></a>
+                        <a href="login.html"><button class="profil_edit_modal">Üye Ol</button></a>
+                    </div>
                     <a class="modal_close" href="#" rel="modal:close">Kapat</a>
                 </div>
+                <!-- Kullanıcı giriş yapmamışsa aşağıdakı div gözüksün -->
+                <!-- <div class="modal_main">
+                    <a href="login.html"><button class="login_button_modal">Giriş Yap</button></a>
+                    <a href="login.html"><button class="login_button_modal">Üye Ol</button></a>
+
+                    <a class="modal_close" href="#" rel="modal:close">Kapat</a>
+                </div> -->
 
             </div>
 
