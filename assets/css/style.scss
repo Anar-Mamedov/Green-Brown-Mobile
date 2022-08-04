@@ -1719,9 +1719,15 @@ section[name="card"] {
     width: 200px;
   }
 
+  // kullanıcı giriş yaptıktan sonra sağ üste profil simgesine tıkladıkdan sonra gelecekler
+
   .profil_edit_modal {
     background: transparent;
-    font-size: 12px;
+    font-size: 14px;
+
+    &:active {
+      color: #b71a1a;
+    }
 
     &:hover {
       background-color: transparent;
