@@ -1418,7 +1418,10 @@ section[name=card] .swiper-slide img {
 }
 .modal_main .profil_edit_modal {
   background: transparent;
-  font-size: 12px;
+  font-size: 14px;
+}
+.modal_main .profil_edit_modal:active {
+  color: #b71a1a;
 }
 .modal_main .profil_edit_modal:hover {
   background-color: transparent;

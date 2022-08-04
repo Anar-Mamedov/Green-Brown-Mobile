@@ -68,7 +68,35 @@
                 </a></button>
             <button><a href="/favorite_products.html"><i class="fa-solid fa-heart"></i></a></button>
             <!-- Modal HTML embedded directly into document -->
-            <div id="ex1" class="modal" style="z-index: 5;">
+
+            <!-- ------------------------------------Kullanıcı giriş yaptıktan sonra aşağıdakı div gözüksün------------------------- -->
+
+            <div id="ex1" class="modal" style="padding: 15px 10px;">
+
+                <div class="modal_main" style="align-items: unset;">
+                    <h1 style=" font-size: 16px; font-weight: 500; color: black; align-self: center; ">Hoş Geldin Anar
+                    </h1>
+                    <div style=" display: flex; flex-direction: column; gap: 5px;">
+                        <a href=""><button class="profil_edit_modal"><i class="fa-solid fa-user"></i> Kullanıcı
+                                Bilgileri</button></a>
+                        <a href=""><button class="profil_edit_modal"><i class="fa-solid fa-cart-shopping"></i>
+                                Siparişlerim</button></a>
+                        <a href=""><button class="profil_edit_modal"><i class="fa-solid fa-star-half-stroke"></i>
+                                Değerlendirmelerim</button></a>
+                        <a href=""><button class="profil_edit_modal"><i class="fa-solid fa-tags"></i> İndirim
+                                Kuponlarım</button></a>
+                        <a href=""><button class="profil_edit_modal"><i class="fa-solid fa-circle-question"></i> Yardım
+                                ve Destek</button></a>
+                    </div>
+                    <a class="modal_close" style=" align-self: center; padding: 5px 20px; " href="#"
+                        rel="modal:close"><i class="fa-solid fa-arrow-right-from-bracket"></i> Çıkış Yap</a>
+                </div>
+
+            </div>
+
+            <!-- ----------------------------------Kullanıcı giriş yapmamışsa aşağıdakı div gözüksün---------------------------------- -->
+
+            <!-- <div id="ex1" class="modal">
                 <div class="modal_main">
                     <a href="login.html"><button class="login_button_modal">Giriş Yap</button></a>
                     <a href="login.html"><button class="login_button_modal">Üye Ol</button></a>
@@ -76,7 +104,7 @@
                     <a class="modal_close" href="#" rel="modal:close">Kapat</a>
                 </div>
 
-            </div>
+            </div> -->
 
             <!-- Link to open the modal -->
             <button><a href="#ex1" rel="modal:open"><i class="fa-solid fa-user"></i></a></button>
