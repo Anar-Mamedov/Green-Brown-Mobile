@@ -19,9 +19,8 @@ h6 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
 }
-
-
 //  çok satan ürün slayderi
+
 .card_slider_swipper {
   height: 497px;
 
@@ -74,10 +73,7 @@ h6 {
       object-fit: cover;
     }
   }
-
 }
-
-
 // ürün kartı
 
 .card-of-product {
@@ -86,14 +82,14 @@ h6 {
   height: 381px;
   border-radius: 28px;
   background: #fff;
-  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 
   .card_text_area {
     padding-top: 10px;
   }
 
   .product-picture {
-    border-radius: 28px 28px 0px 0px;
+    border-radius: 28px 28px 0 0;
     width: 100%;
     height: 211px;
   }
@@ -108,7 +104,7 @@ h6 {
     align-items: center;
     width: 60px;
     height: 58px;
-    border-radius: 28px 0px 38px 0px;
+    border-radius: 28px 0 38px 0;
     background-color: #45726e;
 
     p {
@@ -141,7 +137,7 @@ h6 {
   .star_icon {
     width: 30px;
     height: 30px;
-    background: url(/assets/images/Icon-star.svg);
+    background: url("/assets/images/Icon-star.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-x: center;
@@ -173,7 +169,7 @@ h6 {
   .text_of_product {
     line-height: 15px;
     margin: 0;
-    padding: 0px 0px 0px 10px;
+    padding: 0 0 0 10px;
     font-size: 12px;
     font-weight: 250;
     text-align: left;
@@ -208,7 +204,7 @@ h6 {
       &::before {
         position: absolute;
         content: "";
-        left: 0px;
+        left: 0;
         top: 8px;
         width: 43px;
         right: 0;
@@ -217,7 +213,6 @@ h6 {
         transform: rotate(-5deg);
       }
     }
-
   }
 
   .shop_buttons {
@@ -232,7 +227,7 @@ h6 {
 
   .favorite_icon {
     cursor: pointer;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     margin-right: 3px;
 
     input {
@@ -247,7 +242,7 @@ h6 {
           border-radius: 50%;
           width: 31px;
           height: 31px;
-          transition: all .2s ease-out;
+          transition: all 0.2s ease-out;
           background-color: #45726e;
           /* &:hover {
                         display: -webkit-box;
@@ -284,8 +279,7 @@ h6 {
 
   .ring_checkbox {
     cursor: pointer;
-    margin-bottom: 0rem;
-
+    margin-bottom: 0;
     // margin-right: 3px ;
     input {
       + {
@@ -296,7 +290,7 @@ h6 {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          transition: all .3s ease-out;
+          transition: all 0.3s ease-out;
           /* background-color: #45726e; */
           /* &:hover {
                       display: -webkit-box;
@@ -349,11 +343,7 @@ h6 {
       background-color: #432222;
     }
   }
-
-
 }
-
-
 // menü
 
 .botmu1a .botmu1a .mainMenuOverlay.open .navire {
@@ -378,7 +368,6 @@ h6 {
   -webkit-transition: bottom 0.5s ease;
   transition: bottom 0.5s ease;
 }
-
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .backdrop-blur {
     background-color: rgba(255, 255, 255, .5);
@@ -412,14 +401,13 @@ h6 {
   transition: box-shadow 0.5s ease, top 0.5s ease;
 }
 
-
 .botmu1a .mainMenuOverlay.open .toggleMenu {
   top: 50%;
   background-color: #45726e;
 }
 
 .botmu1a .mainMenuOverlay .itemMenuBox {
-  background: url(../images/backgraund/go2.png) no-repeat center center;
+  background: url("../images/backgraund/go2.png") no-repeat center center;
   background-size: 28px auto;
   position: absolute;
   top: 50%;
@@ -577,7 +565,6 @@ h6 {
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
 }
-
 @-webkit-keyframes Floatingx {
   from {
     -webkit-transform: translate(0, 0px);
@@ -591,7 +578,6 @@ h6 {
     -webkit-transform: translate(0, -0px);
   }
 }
-
 @-moz-keyframes Floating {
   from {
     -moz-transform: translate(0, 0px);
@@ -616,7 +602,6 @@ h6 {
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
 }
-
 @-webkit-keyframes Floatingx2 {
   from {
     -webkit-transform: translate(0, 0px);
@@ -630,7 +615,6 @@ h6 {
     -webkit-transform: translate(0, -0px);
   }
 }
-
 @-moz-keyframes Floating2 {
   from {
     -moz-transform: translate(0, 0px);
@@ -644,9 +628,6 @@ h6 {
     -moz-transform: translate(0, -0px);
   }
 }
-
-
-
 // kategori slayderi
 
 .category_slider {
@@ -697,10 +678,7 @@ h6 {
       object-fit: cover;
     }
   }
-
 }
-
-
 // kategori başlık
 
 .category_header {
@@ -711,7 +689,7 @@ h6 {
   margin-bottom: 15px;
 
   div {
-    background-image: url(/assets/images/GB_logo_headers.svg);
+    background-image: url("/assets/images/GB_logo_headers.svg");
     width: 25px;
     height: 25px;
     background-size: cover;
@@ -729,7 +707,6 @@ h6 {
     font-weight: 500;
   }
 }
-
 // kategori kartları
 
 .category_card {
@@ -752,8 +729,6 @@ h6 {
     color: #45726e;
   }
 }
-
-
 // test kısmı
 
 section[name="test"] {
@@ -769,8 +744,7 @@ section[name="test"] {
   }
 
   .rotate_center {
-
-    background-image: url(/assets/images/rotate_center.webp);
+    background-image: url("/assets/images/rotate_center.webp");
     background-position: center;
     background-size: cover;
     width: 140px;
@@ -778,7 +752,7 @@ section[name="test"] {
   }
 
   .product_rotate {
-    background-image: url(/assets/images/product_rotate.webp);
+    background-image: url("/assets/images/product_rotate.webp");
     background-position: center;
     background-size: cover;
     width: 280px;
@@ -787,7 +761,6 @@ section[name="test"] {
     overflow: hidden;
   }
 }
-
 // ürünleri döndürme
 
 .rotate {
@@ -797,21 +770,16 @@ section[name="test"] {
   // transform-origin: 50% 100%;
   transform-origin: center;
 }
-
 @keyframes rotate {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
-
-
-
 // ürün paylaş butonu ana sayfa
-
 
 .share_button {
   width: 14.05px;
@@ -851,7 +819,7 @@ section[name="test"] {
   position: absolute;
   width: 40px;
   height: 40px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   border-radius: 50%;
   cursor: pointer;
   transition: all 400ms ease;
@@ -878,14 +846,11 @@ section[name="test"] {
   bottom: 3px;
   left: calc(90px - 35px - 16px);
 }
-
-
 // green brown kart bölümü
 
 section[name="card"] {
-
-  html,
-  body {
+  body,
+  html {
     position: relative;
     height: 100%;
   }
@@ -908,7 +873,6 @@ section[name="card"] {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -931,11 +895,9 @@ section[name="card"] {
     margin-bottom: 40px;
     object-fit: cover;
     border-radius: 15px 15px 15px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   }
 }
-
-
 // ürün kartı - 1
 
 .card-of-product1 {
@@ -944,7 +906,7 @@ section[name="card"] {
   height: 381px;
   border-radius: 28px;
   background: #44726e;
-  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 
   .card_text_area {
     padding-top: 10px;
@@ -967,7 +929,7 @@ section[name="card"] {
   }
 
   .product-picture {
-    border-radius: 28px 28px 0px 0px;
+    border-radius: 28px 28px 0 0;
     width: 100%;
     height: 211px;
     // background: url(/assets/images/orn-mockup.png);
@@ -983,7 +945,7 @@ section[name="card"] {
     align-items: center;
     width: 60px;
     height: 58px;
-    border-radius: 28px 0px 38px 0px;
+    border-radius: 28px 0 38px 0;
     background-color: #45726e;
 
     p {
@@ -1016,7 +978,7 @@ section[name="card"] {
   .star_icon {
     width: 30px;
     height: 30px;
-    background: url(/assets/images/Icon-star.svg);
+    background: url("/assets/images/Icon-star.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-x: center;
@@ -1048,7 +1010,7 @@ section[name="card"] {
   .text_of_product {
     line-height: 15px;
     margin: 0;
-    padding: 0px 0px 0px 10px;
+    padding: 0 0 0 10px;
     font-size: 12px;
     font-weight: 250;
     text-align: left;
@@ -1083,7 +1045,7 @@ section[name="card"] {
       &::before {
         position: absolute;
         content: "";
-        left: 0px;
+        left: 0;
         top: 8px;
         width: 43px;
         right: 0;
@@ -1092,7 +1054,6 @@ section[name="card"] {
         transform: rotate(-5deg);
       }
     }
-
   }
 
   .shop_buttons {
@@ -1107,7 +1068,7 @@ section[name="card"] {
 
   .favorite_icon {
     cursor: pointer;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     margin-right: 3px;
 
     input {
@@ -1122,14 +1083,13 @@ section[name="card"] {
           border-radius: 50%;
           width: 31px;
           height: 31px;
-          transition: all .2s ease-out;
+          transition: all 0.2s ease-out;
           background-color: #fff;
           align-items: center;
 
           path {
             fill: #44726e;
           }
-
           /* &:hover {
                       display: -webkit-box;
                       display: -ms-flexbox;
@@ -1169,8 +1129,7 @@ section[name="card"] {
 
   .ring_checkbox {
     cursor: pointer;
-    margin-bottom: 0rem;
-
+    margin-bottom: 0;
     // margin-right: 3px ;
     input {
       + {
@@ -1181,7 +1140,7 @@ section[name="card"] {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          transition: all .3s ease-out;
+          transition: all 0.3s ease-out;
           /* background-color: #45726e; */
           /* &:hover {
                     display: -webkit-box;
@@ -1242,10 +1201,7 @@ section[name="card"] {
       background-color: #432222;
     }
   }
-
-
 }
-
 // müzik bölümü
 
 .music_slider {
@@ -1264,8 +1220,6 @@ section[name="card"] {
     }
   }
 }
-
-
 
 .music_area {
   height: 246px;
@@ -1321,26 +1275,21 @@ section[name="card"] {
     }
   }
 }
-
-
-
 //buton tasarımı
 
 .button_scss {
   font: 12px poppins;
   border-radius: 15.5px 15.5px 15.5px 15.5px;
   display: inline-block;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   text-align: center;
   color: #45726E;
   background: red;
   /* default color */
-
   /* "to left" / "to right" - affects initial color */
   background: linear-gradient(to left, rgb(255, 255, 255) 50%, rgb(190, 32, 32) 50%) right;
   background-size: 200%;
-  transition: .5s ease-out;
-
+  transition: 0.5s ease-out;
 }
 
 .button_scss:hover {
@@ -1352,17 +1301,13 @@ section[name="card"] {
     fill: rgb(255, 255, 255);
   }
 }
-
-
-
 // music swiper
-
 
 .music_carousel {
   height: 325px;
 
-  html,
-  body {
+  body,
+  html {
     position: relative;
     height: 100%;
   }
@@ -1385,7 +1330,6 @@ section[name="card"] {
     text-align: center;
     font-size: 18px;
     // background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1416,8 +1360,8 @@ section[name="card"] {
 .video_carousel {
   height: 450px;
 
-  html,
-  body {
+  body,
+  html {
     position: relative;
     height: 100%;
   }
@@ -1440,7 +1384,6 @@ section[name="card"] {
     text-align: center;
     font-size: 18px;
     // background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1463,8 +1406,6 @@ section[name="card"] {
     object-fit: cover;
   }
 }
-
-
 // kazandıran ürünler slayderi
 
 .winning_products {
@@ -1486,7 +1427,7 @@ section[name="card"] {
     p {
       font-size: 12px;
       color: #ffffff;
-      line-height: 0px;
+      line-height: 0;
     }
 
     .product_text1 {
@@ -1512,13 +1453,11 @@ section[name="card"] {
     }
   }
 }
-
-
 // footer
 
 .footer {
   .footer_background {
-    background: url(/assets/images/shape_footer.png);
+    background: url("/assets/images/shape_footer.png");
     background-color: #004D3F;
     height: auto;
     width: 100%;
@@ -1609,8 +1548,6 @@ section[name="card"] {
     }
   }
 }
-
-
 // banner area
 
 .banner1 {
@@ -1623,12 +1560,10 @@ section[name="card"] {
     background-position: center;
   }
 }
-
-
 // headerdeki logo
 
 .top_header {
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   width: 100%;
   height: 45px;
   display: flex;
@@ -1637,7 +1572,7 @@ section[name="card"] {
   background-color: #ffffff;
   position: fixed;
   z-index: 99;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   top: 0;
   align-content: center;
 
@@ -1684,7 +1619,7 @@ section[name="card"] {
 
 .modal_close {
   background-color: #b71a1a;
-  padding: 6px 10px 6px 10px;
+  padding: 6px 10px;
   border-radius: 10px;
   color: white;
   font-size: 14px;
@@ -1693,7 +1628,6 @@ section[name="card"] {
   :hover {
     color: white;
   }
-
 }
 
 .modal_main {
@@ -1706,7 +1640,7 @@ section[name="card"] {
   .login_button_modal {
     background-color: #efae20;
     border-radius: 12px 12px 12px 12px;
-    padding: 6px 10px 6px 10px;
+    padding: 6px 10px;
     width: 200px;
   }
 
@@ -1714,12 +1648,10 @@ section[name="card"] {
     background-color: #b71a1a;
     color: #fff;
     border-radius: 12px 12px 12px 12px;
-    padding: 6px 10px 6px 10px;
+    padding: 6px 10px;
     width: 200px;
   }
-
   // kullanıcı giriş yaptıktan sonra sağ üste profil simgesine tıkladıkdan sonra gelecekler
-
   .profil_edit_modal {
     background: transparent;
     font-size: 14px;
@@ -1733,9 +1665,7 @@ section[name="card"] {
     }
   }
 }
-
-
-// green brown magazine bölümü 
+// green brown magazine bölümü
 
 .magazine {
   display: flex;
@@ -1743,7 +1673,7 @@ section[name="card"] {
   justify-content: center;
 
   .magazine_bg {
-    background-image: url(/assets/images/sfondo-chicchi.jpg);
+    background-image: url("/assets/images/sfondo-chicchi.jpg");
     width: 300px;
     height: 430px;
     background-size: cover;
@@ -1758,9 +1688,6 @@ section[name="card"] {
     }
   }
 }
-
-
-
 // blog bölümü
 
 .blog {
@@ -1779,7 +1706,6 @@ section[name="card"] {
     line-height: 1.8;
     font-weight: 200;
     text-align: left;
-
     background-color: green;
     max-width: 335px;
     border-radius: 6px;
@@ -1789,11 +1715,7 @@ section[name="card"] {
     left: 10px;
   }
 }
-
-
-
 // -------------------------------ürün detay sayfası--------------------------------
-
 //ürün detay slayder
 
 .product_detail_carousel {
@@ -1823,9 +1745,6 @@ section[name="card"] {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
   }
 }
-
-
-
 // ürün sayısını artırma
 
 .prosuct_count_area {
@@ -1847,13 +1766,13 @@ section[name="card"] {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
 
     input {
       text-align: center;
       font-size: 14px;
-      line-height: 0px;
-      padding: 5px 0 5px 0;
+      line-height: 0;
+      padding: 5px 0;
       width: 30px;
       height: 30px;
       background-color: #007c5d;
@@ -1866,7 +1785,7 @@ section[name="card"] {
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      line-height: 0px;
+      line-height: 0;
       background-color: #014136;
       color: #fff;
       align-items: center;
@@ -1878,7 +1797,6 @@ section[name="card"] {
     }
   }
 }
-
 // ürün açıklama ve başlık kısmı
 
 .product_information_txt {
@@ -1938,7 +1856,7 @@ section[name="card"] {
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px 7px 5px;
+    padding: 5px 5px 7px;
 
     p {
       font-size: 12px;
@@ -1948,7 +1866,7 @@ section[name="card"] {
 }
 
 .commented_product {
-  padding: 0 5px 0 5px;
+  padding: 0 5px;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -1968,7 +1886,6 @@ section[name="card"] {
     img {
       height: 115px;
       max-width: unset;
-
     }
   }
 }
@@ -2011,7 +1928,6 @@ section[name="card"] {
 
   p {
     font-size: 12px;
-
   }
 }
 
@@ -2069,7 +1985,7 @@ section[name="card"] {
 .price_rating {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
 .rating_stars {
@@ -2082,7 +1998,7 @@ section[name="card"] {
 .card_price sup::before {
   position: absolute;
   content: "";
-  left: 0px;
+  left: 0;
   top: 8px;
   width: 43px;
   right: 0;
@@ -2090,8 +2006,8 @@ section[name="card"] {
   border-color: red;
   transform: rotate(-5deg);
 }
-
 // fiyat ve sepete ekle butonukısmı
+
 .addtocard_price {
   position: fixed;
   width: 100%;
@@ -2117,7 +2033,7 @@ section[name="card"] {
     right: 17px;
     top: 14px;
     border-radius: 15px 15px 15px 15px;
-    padding: 5px 8px 5px 8px;
+    padding: 5px 8px;
     background-color: #004d3f;
     color: #fff;
     font-size: 12px;
@@ -2128,8 +2044,6 @@ section[name="card"] {
     background-color: #007c5d;
   }
 }
-
-
 //favorim sayfası
 
 .favorite_header {
@@ -2162,11 +2076,9 @@ section[name="card"] {
     margin-bottom: 15px;
   }
 }
-
 // ürün detay sayfası paylaş çan favorit gibi butonlar
 
 .share_and_favorite_button {
-
   .card-top-buttons {
     display: flex;
     width: 45px;
@@ -2198,8 +2110,7 @@ section[name="card"] {
 
   .ring_checkbox {
     cursor: pointer;
-    margin-bottom: 0rem;
-
+    margin-bottom: 0;
     // margin-right: 3px ;
     input {
       + {
@@ -2210,7 +2121,7 @@ section[name="card"] {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          transition: all .3s ease-out;
+          transition: all 0.3s ease-out;
           /* background-color: #45726e; */
           /* &:hover {
                   display: -webkit-box;
@@ -2245,7 +2156,7 @@ section[name="card"] {
   .star_icon {
     width: 30px;
     height: 30px;
-    background: url(/assets/images/Icon-star.svg);
+    background: url("/assets/images/Icon-star.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-x: center;
@@ -2263,7 +2174,7 @@ section[name="card"] {
 
   .favorite_icon {
     cursor: pointer;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     margin-right: 3px;
 
     input {
@@ -2278,7 +2189,7 @@ section[name="card"] {
           border-radius: 50%;
           width: 31px;
           height: 31px;
-          transition: all .2s ease-out;
+          transition: all 0.2s ease-out;
           background-color: #45726e;
           /* &:hover {
                     display: -webkit-box;
@@ -2307,21 +2218,17 @@ section[name="card"] {
       object-fit: contain;
     }
   }
-
 }
-
-
 // login sayfası tabs yapısı
 
 .login_page {
   * {
     margin: 0;
     padding: 0;
-
   }
 
   body {
-    background: url('https://westfieldcc.files.wordpress.com/2011/10/simple-blur-ipad-background.jpg') no-repeat center center fixed;
+    background: url("https://westfieldcc.files.wordpress.com/2011/10/simple-blur-ipad-background.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 
@@ -2360,19 +2267,17 @@ section[name="card"] {
       // height:45px;
       // line-height:90px;
       background: rgb(12 117 92);
-      ;
       align-content: center;
       justify-content: center;
       align-items: center;
       border-radius: 7px 7px 0 0;
-      padding: 10px 10px 10px 10px;
+      padding: 10px;
 
-      &:hover,
-      &.active {
+      &.active,
+      &:hover {
         background: rgb(255, 255, 255);
         color: #004d3f;
       }
-
       // &:before{
       //   content:'';
       //   position:absolute;
@@ -2404,7 +2309,6 @@ section[name="card"] {
   }
 
   .tabgroup {
-
     // box-shadow:2px 2px 2px 2px rgba(0,0,0,.1);
     div {
       padding: 30px;
@@ -2418,8 +2322,6 @@ section[name="card"] {
     display: table;
     clear: both;
   }
-
-
   // inputlar kısmı mail şifre yazmaq için
   .login_side {
     .q-input {
@@ -2462,7 +2364,7 @@ section[name="card"] {
       justify-content: center;
       align-items: center;
       border-radius: 10px 10px 10px 10px;
-      padding: 7px 0 7px 0;
+      padding: 7px 0;
       background: #004d3f;
       color: #fff;
       font-size: 12px;
@@ -2474,15 +2376,9 @@ section[name="card"] {
       }
     }
   }
-
-
-
 }
-
-
-
-
 // geri buttonu js ile yazıldı
+
 .gobackbutton {
   width: 20px;
   height: 20px;
@@ -2522,7 +2418,6 @@ section[name="card"] {
 
   svg {
     fill: rgb(68 114 110);
-    ;
   }
 
   &:active {
@@ -2531,8 +2426,6 @@ section[name="card"] {
     }
   }
 }
-
-
 // üye olurken cinsiyet seçme düymeleri
 
 .gender {
@@ -2543,9 +2436,8 @@ section[name="card"] {
     font-weight: 600 !important;
   }
 }
-
-
 // şifre sıfırlama sayfası
+
 .steps {
   font-size: 10px;
   color: #666666;
@@ -2558,7 +2450,6 @@ section[name="card"] {
     }
   }
 }
-
 // sayfanın en üstüne çıkma
 
 #myBtn {
@@ -2576,7 +2467,6 @@ section[name="card"] {
   padding: 7px 14px;
   border-radius: 50%;
 }
-
 // yorum yap sayfası
 
 .review-add-form {
@@ -2610,14 +2500,13 @@ section[name="card"] {
     }
   }
 }
-
 // sepet sayfası
 
 .cart {
   padding: 15px;
 
   .cart_header {
-    padding: 0 5px 0 5px;
+    padding: 0 5px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -2654,15 +2543,15 @@ section[name="card"] {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 3px;
+    padding: 3px;
     border: 1px solid #e6e6e6;
     gap: 5px;
 
     input {
       text-align: center;
       font-size: 12px;
-      line-height: 0px;
-      padding: 5px 0 5px 0;
+      line-height: 0;
+      padding: 5px 0;
       width: 20px;
       height: 20px;
       background-color: #007c5d;
@@ -2675,7 +2564,7 @@ section[name="card"] {
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      line-height: 0px;
+      line-height: 0;
       background-color: #01413600;
       color: #014136;
       align-items: center;
@@ -2715,7 +2604,6 @@ section[name="card"] {
     color: #b71a1a;
   }
 }
-
 // sepet sayfası indirim kuponu
 
 .discount_coupon {
@@ -2770,7 +2658,7 @@ section[name="card"] {
     justify-content: center;
     align-items: center;
     border-radius: 10px 10px 10px 10px;
-    padding: 7px 0 7px 0;
+    padding: 7px 0;
     background: #004d3f;
     color: #fff;
     font-size: 12px;
@@ -2784,9 +2672,6 @@ section[name="card"] {
     &:hover {}
   }
 }
-
-
-
 // kullanıcı bilgileri sayfası
 
 .q-input {
@@ -2823,8 +2708,6 @@ section[name="card"] {
     }
   }
 }
-
-
 // genel stiller
 
 .h1_class_14px {
@@ -2846,7 +2729,7 @@ section[name="card"] {
   justify-content: center;
   align-items: center;
   border-radius: 10px 10px 10px 10px;
-  padding: 7px 0 7px 0;
+  padding: 7px 0;
   background: #004d3f;
   color: #fff;
   font-size: 12px;
@@ -2873,7 +2756,6 @@ section[name="card"] {
   font-size: 12px;
   font-weight: 400;
   // width: 100%;
-
   &:active {
     background: #007c5d;
     color: #fff;
@@ -2881,8 +2763,6 @@ section[name="card"] {
 
   &:hover {}
 }
-
-
 // siparişlerim sayfası
 
 .order_wrapper {
