@@ -3,3 +3,5 @@
 *.map
 sftp.json
 .vscode
+.ftpconfig
+atom-sftp-sync.json
