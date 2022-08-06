@@ -62,10 +62,14 @@
             <img src="/assets/images/GREEN_BROWN_WEB_LOGO.svg" alt="">
         </a>
         <div class="header_right">
-            <button style="position: relative;"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span
+            <button style="position: relative;">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span
                         style="position: absolute;background: #005e4c;border-radius: 50%;line-height: 6px;padding: 5px;font-size: 11px;color: #ffffff;top: -4px;right: -10px;"
                         class="number_of_product_cart"></span>
-                </a></button>
+                </a>
+            </button>
             <button><a href="/favorite_products.html"><i class="fa-solid fa-heart"></i></a></button>
             <!-- Modal HTML embedded directly into document -->
 
@@ -115,48 +119,136 @@
     </div>
 
 
-    <div style="margin-top: 45px;" class="comment_area">
-        <div class="comments_header">
-            <div>
-                <p>Ürünü Değerlendir</p>
+    <div style="margin-top: 45px;padding: 20px;display: flex;flex-direction: column;gap: 10px;" class="">
+        <h1 class="h1_class_14px" style="margin-bottom: 10px;">Siparişlerim</h1>
+        <div class="order_wrapper">
+            <div class="order_img">
+                <a href="product_detail.html"><img src="/assets/images/kazandiran-urun.webp" alt=""></a>
             </div>
-        </div>
-        <div style="border-bottom: 1px solid #e9e9e9;" class="commented_product">
-            <div class="commented_product_photo">
-                <img src="/assets/images/kazandiran-urun.webp" alt="">
-            </div>
-            <div class="commented_product_text">
-                <h1><b>Fıstıklı</b> Menengiç</h1>
-                <p>Fıstıklı Menengiç Kahvesi 250g, halk arasında “Melengiç Kahvesi” olarak da bilinmektedir. Özel
-                    aromasıyla yeni tatlar arayanların beğenisini kazanan Fıstıklı Menengiç Kahvesi 250g mutlaka
-                    denemelisiniz.</p>
-            </div>
-        </div>
-        <div class="review-add-form">
-            <div style=" display: flex; justify-content: center; ">
-                <p style=" font-size: 12px; color: black; " class="review-text">Ürünü aşağıdan puanlayabilir ve yorum
-                    yazabilirsin</p>
-            </div>
-            <div
-                style="display: flex;justify-content: center;align-content: center;align-items: center; margin: 15px 0;">
-                <div style="transform: scale(2);" class="coffee_cup rating_stars" data-selected="0">
-                    <img src="/assets/images/star_icon.svg" alt="" style="opacity: 0.3;">
-                    <img src="/assets/images/star_icon.svg" alt="" style="opacity: 0.3;">
-                    <img src="/assets/images/star_icon.svg" alt="" style="opacity: 0.3;">
-                    <img src="/assets/images/star_icon.svg" alt="" style="opacity: 0.3;">
-                    <img src="/assets/images/star_icon.svg" alt="" style="opacity: 0.3;">
+            <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px">Sipariş №:</p>
+                        <p class="p_class_12px">12235944</p>
+                    </div>
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">06-08-2022</p>
+                    </div>
+                </div>
+                <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                    <p class="p_class_12px" style="color: #666;">Takip №:</p>
+                    <p class="p_class_12px"> <b>234j4kk23</b> </p>
+                </div>
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">Adet:</p>
+                        <p class="p_class_12px"><b>2</b> </p>
+                    </div>
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">Fiyat: </p>
+                        <p class="p_class_12px"> <b>99,90₺</b> </p>
+                    </div>
+
+                </div>
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <button class="button1">Takip</button>
+                    <p class="p_class_12px" style="color: #b71a1a;"><b>Teslim Edilmedi</b> </p>
                 </div>
             </div>
-            <div>
-                <textarea name="comment" id="comment" class="comment-input"
-                    placeholder="Ürünün hem fiyatı uygun hem de göründüğü gibi kaliteli bir ürün." minlength="10"
-                    maxlength="2000"></textarea>
+
+        </div>
+        <div class="order_wrapper">
+            <div class="order_img">
+                <a href="product_detail.html"><img src="/assets/images/kazandiran-urun.webp" alt=""></a>
             </div>
-            <div style=" padding: 10px 10px; ">
-                <a><button
-                        style="display: flex; align-content: center; justify-content: center; align-items: center; border-radius: 10px 10px 10px 10px; padding: 7px 0 7px 0; background: #004d3f; color: #fff; font-size: 12px; font-weight: 400; width: 100%;"
-                        class="button" onclick="window.location.replace(document.referrer);">Gönder</button></a>
+            <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px">Sipariş №:</p>
+                        <p class="p_class_12px">12235944</p>
+                    </div>
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">01-08-2022</p>
+                    </div>
+                </div>
+                <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                    <p class="p_class_12px" style="color: #666;">Takip №:</p>
+                    <p class="p_class_12px"> <b>234j4kk23</b> </p>
+                </div>
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">Adet:</p>
+                        <p class="p_class_12px"><b>2</b> </p>
+                    </div>
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">Fiyat: </p>
+                        <p class="p_class_12px"> <b>99,90₺</b> </p>
+                    </div>
+
+                </div>
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <button class="button1">Takip</button>
+                    <p class="p_class_12px" style="color: #0d8c6c;"><b>Teslim Edildi</b> </p>
+                </div>
             </div>
+
+        </div>
+        <div class="order_wrapper">
+            <div class="order_img">
+                <a href="product_detail.html"><img src="/assets/images/kazandiran-urun.webp" alt=""></a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px">Sipariş №:</p>
+                        <p class="p_class_12px">12235944</p>
+                    </div>
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">24-07-2022</p>
+                    </div>
+                </div>
+                <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                    <p class="p_class_12px" style="color: #666;">Takip №:</p>
+                    <p class="p_class_12px"> <b>234j4kk23</b> </p>
+                </div>
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">Adet:</p>
+                        <p class="p_class_12px"><b>2</b> </p>
+                    </div>
+                    <div
+                        style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
+                        <p class="p_class_12px" style="color: #666;">Fiyat: </p>
+                        <p class="p_class_12px"> <b>99,90₺</b> </p>
+                    </div>
+
+                </div>
+                <div
+                    style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between;">
+                    <button class="button1">Takip</button>
+                    <p class="p_class_12px" style="color: #0d8c6c;"><b>Teslim Edildi</b> </p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -222,11 +314,8 @@
         </div>
     </div>
 
-    <!-- sayfanın başına dönmek için buton -->
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa fa-angle-up"></i>
-    </button>
+
 
     <section class="botmu1a">
         <div id="mainMenu" class="mainMenuOverlay floating2">
