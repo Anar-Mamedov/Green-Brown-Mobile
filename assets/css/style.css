@@ -82,7 +82,6 @@ h6 {
   border-radius: 28px 28px 0px 0px;
   width: 100%;
   height: 211px;
-  background: url(/assets/images/orn-mockup.png);
 }
 .card-of-product .action_button {
   margin-bottom: 10px;
@@ -820,7 +819,6 @@ section[name=card] .swiper-slide img {
   border-radius: 28px 28px 0px 0px;
   width: 100%;
   height: 211px;
-  background: url(/assets/images/orn-mockup.png);
 }
 .card-of-product1 .action_button {
   margin-bottom: 10px;
@@ -2237,6 +2235,104 @@ section[name=card] .swiper-slide img {
 }
 .discount_coupon_parent .button:active {
   background: #007c5d;
+}
+.q-input {
+  background-color: #f8f8f8 !important;
+  font-size: 12px !important;
+  border: 1px solid #e6e6e6 !important;
+  border-radius: 3px !important;
+  height: 40px !important;
+  padding: 10px !important;
+  color: #666 !important;
+  font-weight: 400 !important;
+  -webkit-appearance: none !important;
+  line-height: 14px !important;
+}
+.q-input::placeholder {
+  color: #666 !important;
+}
+.q-input:focus {
+  background-color: #f8f8f8 !important;
+  font-size: 12px !important;
+  border: 1px solid #e6e6e6 !important;
+  border-radius: 3px !important;
+  height: 40px !important;
+  padding: 10px !important;
+  font-weight: 400 !important;
+  color: #666 !important;
+  -webkit-appearance: none !important;
+}
+.q-input:focus::placeholder {
+  color: #666 !important;
+}
+
+.h1_class_14px {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  line-height: 14px;
+}
+
+.p_class_12px {
+  font-size: 12px;
+  color: black;
+  line-height: 14px;
+}
+
+.button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 7px 0 7px 0;
+  background: #004d3f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+}
+.button:active {
+  background: #007c5d;
+}
+.button1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px;
+  padding: 2px 20px;
+  border: 1px solid #e6e6e6;
+  background: rgba(0, 77, 63, 0);
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 400;
+}
+.button1:active {
+  background: #007c5d;
+  color: #fff;
+}
+.order_wrapper {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+.order_wrapper .order_img {
+  width: 25%;
+  min-width: 70px;
+  border-radius: 3px;
+  height: auto;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
