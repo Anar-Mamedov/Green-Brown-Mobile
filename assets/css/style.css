@@ -2335,4 +2335,60 @@ section[name=card] .swiper-slide img {
   overflow: hidden;
 }
 
+.coupons {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ffbf99;
+  background: #ffefe5;
+  flex-direction: row;
+}
+.coupons .ticket_effect {
+  bottom: -1px;
+  height: 8px;
+  width: 16px;
+  border: 1px solid #ffbf99;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  box-shadow: 0 1px 0 0 #fff;
+}
+.coupons .ticket_effect_up {
+  height: 8px;
+  width: 16px;
+  border: 1px solid #ffbf99;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  box-shadow: 0 1px 0 0 #fff;
+  transform: rotate(180deg);
+  top: -1px;
+}
+
+.js-copytextarea {
+  text-align: center;
+  overflow: hidden;
+  resize: none;
+  width: 100%;
+  line-height: 11px;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #000;
+  background: transparent;
+  border: 0px;
+  border-radius: 0px;
+  padding: 0px;
+}
+.js-copytextarea:focus {
+  color: #000;
+  background: transparent;
+  border: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */

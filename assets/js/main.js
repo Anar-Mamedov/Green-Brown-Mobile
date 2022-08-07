@@ -242,3 +242,19 @@ localStorage.setItem("cartnum", num);
 var cartnumm = localStorage.getItem("cartnum");
 // console.log(cartnumm);
 $(".number_of_product_cart").text(" " + cartnumm + " ");
+
+
+
+// ____________________ copy to clipboard özelliği için indirim kuponlarının kodlarını kopyalamak için _____________________
+
+
+$(".copy").on('click', function () {
+  var text = $(this).parents(".discount_coupon1").find(".coupon_code").text()
+  console.log(text)
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val(text).select();
+  document.execCommand("copy");
+  $temp.remove();
+
+});
