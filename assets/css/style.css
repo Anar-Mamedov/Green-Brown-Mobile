@@ -2392,4 +2392,45 @@ section[name=card] .swiper-slide img {
   border: 0;
 }
 
+.customer_text {
+  border-radius: 20px 20px 0px 20px;
+  border: 1px solid #e6e6e6;
+  padding: 16px;
+  width: 90%;
+  align-self: flex-end;
+}
+
+.seller_text {
+  border-radius: 20px 20px 20px 0px;
+  background: #f5f5f5;
+  padding: 16px;
+  width: 90%;
+}
+
+.textarea_style {
+  height: 110px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 17px;
+  border-radius: 10px;
+  width: 100%;
+  color: #151515;
+  font-weight: 400;
+  background: #fff;
+  border: 1px solid #f3f2f6;
+}
+.textarea_style:focus {
+  background: #fff;
+  border: 1px solid #f3f2f6;
+  color: #151515;
+}
+.textarea_style::placeholder {
+  color: #666;
+}
+
+.file_input {
+  font-size: 12px;
+  color: black;
+}
+
 /*# sourceMappingURL=style.css.map */

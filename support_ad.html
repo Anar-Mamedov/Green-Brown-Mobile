@@ -118,95 +118,18 @@
 
 
   <div style="margin-top: 45px;padding: 20px;display: flex;flex-direction: column;gap: 10px;" class="">
-    <div
-      style=" display: flex; align-items: center; align-content: center; justify-content: space-between; margin-bottom: 10px;">
-      <h1 class="h1_class_14px">Destek Taleplerim</h1>
-      <a href="support_ad.html"><button class="p_class_12px button1"
-          style="padding: 10px 10px; display: flex; gap: 3px;"><span style="font-size: 16px; font-weight: 300;">+
-          </span> Talep
-          Oluştur</button></a>
+    <div style=" display: flex; align-items: center; align-content: center; justify-content: space-between;">
+      <h1 class="h1_class_14px">Yeni Talep Oluşturun </h1>
     </div>
 
-    <a href="support_detail.html">
-      <div class="order_wrapper">
-        <div class="order_img">
-          <img src="/assets/images/kazandiran-urun.webp" alt="">
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
-          <div
-            style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between; margin-bottom: 5px;">
-            <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
-              <p class="p_class_12px"
-                style="font-weight: 600; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">
-                Bu Alan Konu Başlığı içindir</p>
-            </div>
 
-          </div>
-          <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
-            <p class="p_class_12px"
-              style="color: #666; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">
-              Bu Alanda Konunun içeriği yer
-              alacaktır Bu Alanda Konunun içeriği
-              yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda
-              Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer
-              alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda
-              Konunun
-              içeriği yer alacaktır</p>
-          </div>
-          <div style=" display: flex; flex-direction: row; gap: 10px; ">
-            <div style=" display: flex; flex-direction: column; gap: 3px; ">
-              <p class="p_class_12px" style="font-weight: 500;">Destek Tarihi</p>
-              <p class="p_class_12px" style="color: #646464;">02-08-2022</p>
-            </div>
-            <div style=" display: flex; flex-direction: column; gap: 3px; ">
-              <p class="p_class_12px" style="font-weight: 500;">Durum</p>
-              <p class="p_class_12px" style="color: #646464;">inceleniyor</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </a>
-    <a href="support_detail.html">
-      <div class="order_wrapper">
-        <div class="order_img">
-          <img src="/assets/images/kazandiran-urun.webp" alt="">
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 5px; width: 100%;">
-          <div
-            style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px; justify-content: space-between; margin-bottom: 5px;">
-            <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
-              <p class="p_class_12px"
-                style="font-weight: 600; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">
-                Bu Alan Konu Başlığı içindir</p>
-            </div>
-
-          </div>
-          <div style=" display: flex; flex-direction: row; align-items: center; align-content: center; gap: 3px;">
-            <p class="p_class_12px"
-              style="color: #666; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;">
-              Bu Alanda Konunun içeriği yer
-              alacaktır Bu Alanda Konunun içeriği
-              yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda
-              Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer
-              alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda Konunun içeriği yer alacaktır Bu Alanda
-              Konunun
-              içeriği yer alacaktır</p>
-          </div>
-          <div style=" display: flex; flex-direction: row; gap: 10px; ">
-            <div style=" display: flex; flex-direction: column; gap: 3px; ">
-              <p class="p_class_12px" style="font-weight: 500;">Destek Tarihi</p>
-              <p class="p_class_12px" style="color: #646464;">02-08-2022</p>
-            </div>
-            <div style=" display: flex; flex-direction: column; gap: 3px; ">
-              <p class="p_class_12px" style="font-weight: 500;">Durum</p>
-              <p class="p_class_12px" style="color: #646464;">Kapalı</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </a>
+    <div style="padding: 10px; display: flex; flex-direction: column;gap: 15px;">
+      <input class="q-input" type="text" name="" id="" placeholder="Başlık Girin">
+      <textarea class="textarea_style" name="" id="" cols="30" rows="10"
+        placeholder="Şikayetiniz ile ilgili detay girin"></textarea>
+      <input class="file_input" type="file" name="image" accept="image/*">
+      <a><button class="button" onclick="window.location.reload(document.referrer);">Gönder</button></a>
+    </div>
 
   </div>
 
