@@ -2313,6 +2313,15 @@ section[name=card] .swiper-slide img {
   background: #007c5d;
   color: #fff;
 }
+.button2 {
+  background: transparent;
+  color: #000;
+}
+.button2:active {
+  background: transparent;
+  color: #b71a1a;
+}
+
 .order_wrapper {
   width: 100%;
   padding: 10px;
@@ -2431,6 +2440,28 @@ section[name=card] .swiper-slide img {
 .file_input {
   font-size: 12px;
   color: black;
+}
+
+.class-for-sup::before {
+  width: 32px !important;
+  top: 0px !important;
+  border-top: 2px solid red !important;
+}
+
+.blocker #ex2 {
+  float: right;
+  height: 100%;
+  width: 75%;
+  padding: 0px;
+}
+.blocker #ex2 .close-modal {
+  top: 6.5px;
+  right: 10.5px;
+}
+
+.blocker {
+  z-index: 100 !important;
+  padding: 0px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
