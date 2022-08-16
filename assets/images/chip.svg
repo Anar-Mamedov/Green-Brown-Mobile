@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.023" height="30.494" viewBox="0 0 42.023 30.494">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1452" data-name="Rectangle 1452" width="41.429" height="29.899" rx="4.462" transform="translate(0.297 0.297)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.089" y1="0.817" x2="0.108" y2="0.817" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffffc7"/>
+      <stop offset="0.578" stop-color="#ffcb68"/>
+      <stop offset="1" stop-color="#f5e08f"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1454" data-name="Rectangle 1454" width="42.023" height="30.494" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1046" data-name="Group 1046" transform="translate(0 0)">
+    <g id="Group_1043" data-name="Group 1043">
+      <g id="Group_1042" data-name="Group 1042" clip-path="url(#clip-path)">
+        <rect id="Rectangle_1451" data-name="Rectangle 1451" width="51.078" height="48.107" transform="matrix(0.824, -0.566, 0.566, 0.824, -13.66, 9.89)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_1045" data-name="Group 1045">
+      <g id="Group_1044" data-name="Group 1044" clip-path="url(#clip-path-2)">
+        <path id="Path_16307" data-name="Path 16307" d="M11.369,10.561A5.28,5.28,0,1,0,11.369,0V.6a4.685,4.685,0,1,1,0,9.371H.3v.6h9.714v9.372H.3v.595H11.369a4.686,4.686,0,1,1,0,9.372v.594a5.28,5.28,0,1,0,0-10.561H10.6V10.561Z" fill="#d8a960"/>
+        <path id="Path_16308" data-name="Path 16308" d="M41.726,10.561v-.6H30.654a4.685,4.685,0,0,1,0-9.371V0a5.28,5.28,0,0,0,0,10.561h.763v9.372h-.763a5.28,5.28,0,0,0,0,10.561V29.9a4.686,4.686,0,0,1,0-9.372H41.726v-.595H32.012V10.561Z" fill="#d8a960"/>
+        <rect id="Rectangle_1453" data-name="Rectangle 1453" width="41.428" height="29.899" rx="4.462" transform="translate(0.298 0.297)" fill="none" stroke="#d8a960" stroke-miterlimit="10" stroke-width="0.595"/>
+      </g>
+    </g>
+  </g>
+</svg>
