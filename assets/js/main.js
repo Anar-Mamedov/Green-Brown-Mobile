@@ -279,22 +279,22 @@ $('#iban').on('input paste', function () {
 
   // kredit kartının visamı mastermi olduğunu kontrol ediyor
 
-  if (+$(this).val().charAt(0) === 4) {
-    $(".credit_card #visa").show();
-    $(".credit_card #master").hide();
-  } else if (+$(this).val().charAt(0) === 5) {
-    $(".credit_card #master").show();
-    $(".credit_card #visa").hide();
-  } else {
-    $(".credit_card #visa").hide();
-    $(".credit_card #master").hide();
-  }
+  // if (+$(this).val().charAt(0) === 4) {
+  //   $(".credit_card #visa").show();
+  //   $(".credit_card #master").hide();
+  // } else if (+$(this).val().charAt(0) === 5) {
+  //   $(".credit_card #master").show();
+  //   $(".credit_card #visa").hide();
+  // } else {
+  //   $(".credit_card #visa").hide();
+  //   $(".credit_card #master").hide();
+  // }
 
   // kredit kartının visamı mastermi olduğunu kontrol ediyor
 
-  // const firstChar = $(this).val().charAt(0);
-  // $(`.credit_card img[data-card-type=${firstChar === "" ? -1 : firstChar}]`).show();
-  // $(`.credit_card img[data-card-type!=${firstChar === "" ? -1 : firstChar}]`).hide();
+  const firstChar = $(this).val().charAt(0);
+  $(`#card_type_icon img[data-card-type=${firstChar === "" ? -1 : firstChar}]`).show();
+  $(`#card_type_icon img[data-card-type!=${firstChar === "" ? -1 : firstChar}]`).hide();
 
   // kredi kartının numarasının uzunluğunu kontrol ediyor sadece sayı girebilir ve her 4 rakamdan sonra boşluk bırakıyor
 
