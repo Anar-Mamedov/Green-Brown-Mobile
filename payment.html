@@ -117,16 +117,21 @@
   </div>
 
 
-  <div style="margin-top: 45px;" class="cart">
+  <div style="margin-top: 45px; margin-bottom: 5px;" class="cart">
+    <div
+      style="display: flex;align-content: center;justify-content: center;align-items: center; margin-bottom: 10px;  ">
+      <p style="font-size: 16px; color: #51585f; font-weight: 400;">Ödeme Bilgilerini Gir</p>
+    </div>
     <div class="credit_card">
 
-      <div style=" display: flex; flex-direction: column; justify-content: space-around; height: 100%;">
+      <div
+        style=" display: flex; flex-direction: column; justify-content: space-around; height: 100%; padding-bottom: 10px; padding-top: 10px;">
 
         <div style="display: flex;flex-direction: row;padding: 0px 20px;height: 22px;justify-content: space-between;">
           <div>
             <img src="/assets/images/nfc.svg" alt="">
           </div>
-          <div>
+          <div id="card_type_icon">
             <img id="visa" src="/assets/images/visa_white.svg" alt="" style="display: none" data-card-type="4">
             <img id="master" src="/assets/images/mastercard_white.svg" alt="" style="display: none" data-card-type="5">
           </div>
@@ -138,18 +143,22 @@
         <div
           style=" display: flex; align-items: flex-end; flex-direction: row; gap: 10px; justify-content: space-around;">
           <div style="display: flex; flex-direction: column; width: 145px;">
-            <label style="margin-bottom: 0px;color: white;padding: 0px 0px 0px 7px;" for=""
-              style=" margin-bottom: 0px; ">Ad Soyad</label>
+            <label style="margin-bottom: 0px;color: white;padding: 0px 0px 0px 7px;" for="">Ad Soyad</label>
             <input class="card_input_name" type="text" name="" id="" placeholder="Ad Soyad">
           </div>
-          <div
-            style="display: flex; flex-direction: row; align-items: center; align-content: center; border: 1px solid white; color: #ffffff; border-radius: 5px;">
-            <input class="input-no-border card_input_name " style=" width: 21px; padding: 0 1px 0 5px; " type="number"
-              placeholder="01"> /
-            <input class="input-no-border card_input_name" style=" width: 40px; padding: 0 5px 0 3px; " type="number"
-              name="" id="" placeholder="2030">
+          <div>
+            <label style="margin-bottom: 0px;color: white;padding: 0px 0px 0px 7px;" for="">Tarih</label>
+            <div
+              style="display: flex; flex-direction: row; align-items: center; align-content: center; border: 1px solid white; color: #ffffff; border-radius: 5px;">
+              <input class="input-no-border card_input_name " style=" width: 21px; padding: 0 1px 0 5px; " type="number"
+                placeholder="01"> /
+              <input class="input-no-border card_input_name" style=" width: 40px; padding: 0 5px 0 3px; " type="number"
+                name="" id="" placeholder="2030">
+            </div>
           </div>
+
           <div style=" width: 50px; ">
+            <label style="margin-bottom: 0px;color: white;padding: 0px 0px 0px 7px;" for="">cvv</label>
             <input class="card_input_name" type="password" name="" id="" placeholder="cvv" style=" padding: 0px 13px; ">
           </div>
         </div>
@@ -158,6 +167,34 @@
     </div>
   </div>
 
+  <div style="padding: 0 15px; margin-bottom: 25px;">
+    <div
+      style="border: 1px solid #39b7c2; filter: drop-shadow(0 0 0.75rem #39b7c2); border-radius: 9px; background: #ffffff;">
+      <div
+        style="display: flex;justify-content: center;align-items: center;align-content: center;padding: 10px;border-radius: 8px 8px 0 0;background: #38b8c2;">
+        <p style="color: rgb(255, 255, 255);">Sipariş Özeti</p>
+      </div>
+      <div style=" padding: 10px 10px; display: flex; flex-direction: column; gap: 5px; font-size: 14px;">
+        <div style=" display: flex; justify-content: space-between; ">
+          <p>Ara Toplam</p>
+          <p>52,90 ₺</p>
+        </div>
+        <div style=" display: flex; justify-content: space-between; ">
+          <p>Kargo Ücreti</p>
+          <p>25,00 ₺</p>
+        </div>
+        <div style=" display: flex; justify-content: space-between; color: crimson;">
+          <p>İndirim</p>
+          <p>34,90 ₺</p>
+        </div>
+        <div style=" display: flex; justify-content: space-between; font-weight: 600;">
+          <p>Toplam</p>
+          <p>49,90 ₺</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
   <div class="addtocard_price">
