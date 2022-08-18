@@ -301,3 +301,250 @@ $('#iban').on('input paste', function () {
   if ($(this).val().length > 19) $(this).val($(this).val().substring(0, 19))
   else $(this).val($(this).val().replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim())
 })
+
+// kahve öneri sayfası
+
+const suggestions = [{
+    question: "Hangi kahve tipini seviyorsunuz?",
+    images: [{
+        src: "/assets/images/coffee_bean.png",
+        name: "Single Origin",
+        value: 0,
+      },
+      {
+        src: "/assets/images/Blend(Harman).png",
+        name: "Blend(Harman)",
+        value: 1,
+      },
+      {
+        src: "/assets/images/Espresso-1.png",
+        name: "Espresso",
+        value: 2,
+      },
+      {
+        src: "/assets/images/Turk-Kahvesi.png",
+        name: "Türk Kahvesi",
+        value: 3,
+      },
+    ]
+  },
+  {
+    question: "Sevdiğiniz kavurma derecesi var mı?",
+    images: [{
+        src: "/assets/images/acıkorta.png",
+        name: "Açık Orta",
+        value: 0,
+      },
+      {
+        src: "/assets/images/orta.png",
+        name: "Orta",
+        value: 1,
+      },
+      {
+        src: "/assets/images/ortakoyu.png",
+        name: "Orta Koyu",
+        value: 2,
+      },
+      {
+        src: "/assets/images/emindegilim.png",
+        name: "Emin Değilim",
+        value: 3,
+      },
+    ]
+  },
+  {
+    question: "Kahvenizde aradığınız tat var mı?",
+    images: [{
+        src: "/assets/images/meyvemsi.png",
+        name: "Meyvemsi",
+        value: 0,
+      },
+      {
+        src: "/assets/images/ciceksi.png",
+        name: "Çiçeksi",
+        value: 1,
+      },
+      {
+        src: "/assets/images/cikolata.png",
+        name: "Tatlı ve Çikolata",
+        value: 2,
+      },
+      {
+        src: "/assets/images/yumusak.png",
+        name: "Yumuşak/Dengeli",
+        value: 3,
+      },
+      {
+        src: "/assets/images/kompleks.png",
+        name: "Gövdeli/Kompleks",
+        value: 4,
+      },
+      {
+        src: "/assets/images/sert.png",
+        name: "Sert/Yoğun",
+        value: 5,
+      },
+      {
+        src: "/assets/images/baharatlı.png",
+        name: "Baharatlı",
+        value: 6,
+      },
+      {
+        src: "/assets/images/emindegilim.png",
+        name: "Emin Değilim",
+        value: 7,
+      },
+    ]
+  },
+  {
+    question: "Kahvenizi Ögütülmüş mü alırsınız?",
+    images: [{
+        src: "/assets/images/coffee_bean.png",
+        name: "Tam Çekirdek - Filtreye göre",
+        value: 0,
+      },
+      {
+        src: "/assets/images/coffee_bean.png",
+        name: "Tam Çekirdek - Espresso ve Mokapot'a göre",
+        value: 1,
+      },
+      {
+        src: "/assets/images/filtre-1.png",
+        name: "Filtre",
+        value: 2,
+      },
+      {
+        src: "/assets/images/Espresso-1.png",
+        name: "Espresso",
+        value: 3,
+      },
+      {
+        src: "/assets/images/mokapot-1.png",
+        name: "Mokapot",
+        value: 4,
+      },
+      {
+        src: "/assets/images/aeropress.png",
+        name: "Aeropress",
+        value: 5,
+      },
+      {
+        src: "/assets/images/frenchpress-1.png",
+        name: "Frenchpress",
+        value: 6,
+      },
+      {
+        src: "/assets/images/Chemex-1.png",
+        name: "Chemex",
+        value: 7,
+      },
+      {
+        src: "/assets/images/V60-1.png",
+        name: "V60",
+        value: 8,
+      },
+      {
+        src: "/assets/images/turk-kahvesi.png",
+        name: "Türk kahvesi",
+        value: 9,
+      },
+    ]
+  },
+  {
+    question: "Hangi bölgenin kahvelerini daha çok seversiniz?",
+    images: [{
+        src: "/assets/images/afrika.png",
+        name: "Afrika",
+        value: 0,
+      },
+      {
+        src: "/assets/images/latin-amerika.png",
+        name: "Latin Amerika",
+        value: 1,
+      },
+      {
+        src: "/assets/images/emindegilim.png",
+        name: "Emin Değilim",
+        value: 2,
+      },
+    ]
+  },
+  {
+    question: "İyi kahve için fiyat duyarlılığınız nedir?",
+    images: [{
+        src: "/assets/images/tl.png",
+        name: "Fiyata az-orta duyarlıyım",
+        value: 0,
+      },
+      {
+        src: "/assets/images/tl.png",
+        name: "Fiyata çok duyarlıyım",
+        value: 1,
+      },
+      {
+        src: "/assets/images/face-fiyat.png",
+        name: "Fark etmez",
+        value: 2,
+      },
+    ]
+  },
+]
+
+const answers = {
+  // {sayfa numarası}: {seçilen resim değeri}
+}
+
+$(document).ready(function () {
+  if ($('.recommendations').length > 0) {
+    $('.recommendations #question').html(suggestions[0].question)
+    $('.recommendations #page_index').html('1')
+    suggestions[0].images.forEach(function (item, index) {
+      $('.recommendations #images').append(`
+        <div class="image-container" data-value="${item.value}" ><img src="${item.src}" alt="${item.name}"><p>${item.name}</p></div>
+      `)
+    })
+  }
+})
+
+$("#images").on("click", ".image-container", function () {
+  const currPage = $('.recommendations #page_index').html() * 1
+  $('.recommendations #prev-page-button').show()
+  answers[currPage - 1] = +$(this).attr('data-value')
+
+  console.log(answers)
+
+  if (currPage === 6) {
+    // safiye answersde olan değerleri alman gerekiyor
+    window.location.href = '/recommendation_result.html'
+  } else {
+    $("#images").empty();
+    $('.recommendations #page_index').html(currPage + 1)
+    $('.recommendations #question').html(suggestions[currPage].question)
+    suggestions[currPage].images.forEach(function (item) {
+      $('.recommendations #images').append(`
+        <div class="image-container" data-value="${item.value}" ><img src="${item.src}" alt="${item.name}"><p>${item.name}</p></div>
+      `)
+    })
+  }
+})
+
+$("#prev-page-button").on("click", function () {
+  const currPage = $('.recommendations #page_index').html() * 1
+
+  console.log(currPage)
+
+  if (currPage - 1 === 1)
+    $(this).hide()
+
+  $("#images").empty();
+  $('.recommendations #page_index').html(currPage - 1)
+  $('.recommendations #question').html(suggestions[currPage - 2].question)
+  suggestions[currPage - 2].images.forEach(function (item) {
+    $('.recommendations #images').append(`
+      <div class="image-container" data-value="${item.value}" ><img src="${item.src}" alt="${item.name}"><p>${item.name}</p></div>
+    `)
+  })
+
+  console.log(answers, currPage - 2)
+  $(`.recommendations .image-container[data-value=${answers[currPage - 2]}]`).addClass('active')
+})
