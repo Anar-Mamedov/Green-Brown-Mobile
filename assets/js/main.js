@@ -302,7 +302,7 @@ $('#iban').on('input paste', function () {
   else $(this).val($(this).val().replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim())
 })
 
-// kahve öneri sayfası
+// _________________________________________________________ kahve öneri sayfası ___________________________________________________________
 
 const suggestions = [{
     question: "Hangi kahve tipini seviyorsunuz?",
@@ -515,7 +515,8 @@ $("#images").on("click", ".image-container", function () {
 
   if (currPage === 6) {
     // safiye answersde olan değerleri alman gerekiyor
-    window.location.href = '/recommendation_result.html'
+    // window.location.href = '/recommendation_result.html?ans=' + JSON.stringify(answers);
+    window.location.href = '/recommendation_result.html?ans=' + Object.values(answers).join(',');
   } else {
     $("#images").empty();
     $('.recommendations #page_index').html(currPage + 1)
@@ -548,3 +549,56 @@ $("#prev-page-button").on("click", function () {
   console.log(answers, currPage - 2)
   $(`.recommendations .image-container[data-value=${answers[currPage - 2]}]`).addClass('active')
 })
+
+
+// _________ ürünler sayfasında kategori kısmı için kategoriye basıldığında active classı eklenicek _________
+
+// üstüne tıkladığında aktiv ekliyor başka yere tıkladığımda active classını kaldırıyor
+$(document).on("click", function (event) {
+  if ($(event.target).closest('.categories div').length === 0) {
+    $('.categories div').removeClass('active')
+  }
+})
+
+// butona tıklandığında active classı ekleniyor başka butona tıklandığında ona active clası ekleyip diğer butondakı active kılasını kaldırıyor
+
+$('.categories').on('click', 'div', function (event) {
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active')
+  } else {
+    $('.categories div').removeClass('active')
+    $(this).addClass('active')
+  }
+});
+
+
+// $('.first_category').click(function () {
+//   if ($(this).addClass("active")) {
+//     $('.second_category, .third_category, .fourth_category, .fifth_category, .sixth_category').removeClass('active');
+//   }
+// });
+// $('.second_category').click(function () {
+//   if ($(this).addClass("active")) {
+//     $('.first_category, .third_category, .fourth_category, .fifth_category, .sixth_category').removeClass('active');
+//   }
+// });
+// $('.third_category').click(function () {
+//   if ($(this).addClass("active")) {
+//     $('.second_category, .first_category, .fourth_category, .fifth_category, .sixth_category').removeClass('active');
+//   }
+// });
+// $('.fourth_category').click(function () {
+//   if ($(this).addClass("active")) {
+//     $('.second_category, .third_category, .first_category, .fifth_category, .sixth_category').removeClass('active');
+//   }
+// });
+// $('.fifth_category').click(function () {
+//   if ($(this).addClass("active")) {
+//     $('.second_category, .third_category, .fourth_category, .first_category, .sixth_category').removeClass('active');
+//   }
+// });
+// $('.sixth_category').click(function () {
+//   if ($(this).addClass("active")) {
+//     $('.second_category, .third_category, .fourth_category, .fifth_category, .first_category').removeClass('active');
+//   }
+// });

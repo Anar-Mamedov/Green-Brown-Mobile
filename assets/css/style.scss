@@ -2997,6 +2997,97 @@ section[name="card"] {
   }
 }
 
+// ürünler sayfasındakı kategori kısmı
+.categories {
+
+  .second_childe {
+    animation: fade-out 1s;
+    display: none;
+    // transform: translateX(100%);
+    // transition: all 500ms;
+    // opacity: 0;
+    // z-index: -1;
+  }
+
+  .active {
+    .category_menu_header {
+      background: #007c5d !important;
+    }
+
+    .second_childe {
+      margin-top: 2px;
+      display: flex !important;
+      // background: #007c5d;
+      width: 97%;
+      align-self: center;
+      gap: 3px;
+      animation: fade-in 1s;
+
+      // opacity: 1;
+      // transform: translateX(0);
+      // transition: all 500ms;
+      // border-radius: 7px;
+      button {
+        background: #007c5d;
+        color: #fff;
+        width: 100%;
+        font-size: 12px;
+        border-radius: 7px;
+        padding: 5px 15px;
+        text-align: left;
+      }
+    }
+  }
+
+  .category_style {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateX(100%);
+    transition: all 500ms;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+
+  to {
+    transform: translateX(100%);
+    transition: all 500ms;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+
+.category_menu_header {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  background: #002620;
+  color: #fff;
+  border-radius: 7px;
+}
+
 // jquery modal genel düzenlemesi
 
 .blocker {

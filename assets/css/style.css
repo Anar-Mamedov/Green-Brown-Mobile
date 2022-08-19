@@ -2464,6 +2464,72 @@ section[name=card] .swiper-slide img {
   right: 10.5px;
 }
 
+.categories .second_childe {
+  animation: fade-out 1s;
+  display: none;
+}
+.categories .active .category_menu_header {
+  background: #007c5d !important;
+}
+.categories .active .second_childe {
+  margin-top: 2px;
+  display: flex !important;
+  width: 97%;
+  align-self: center;
+  gap: 3px;
+  animation: fade-in 1s;
+}
+.categories .active .second_childe button {
+  background: #007c5d;
+  color: #fff;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 7px;
+  padding: 5px 15px;
+  text-align: left;
+}
+.categories .category_style {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateX(100%);
+    transition: all 500ms;
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms;
+  }
+  to {
+    transform: translateX(100%);
+    transition: all 500ms;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.category_menu_header {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  background: #002620;
+  color: #fff;
+  border-radius: 7px;
+}
+
 .blocker {
   z-index: 100 !important;
   padding: 0px !important;
