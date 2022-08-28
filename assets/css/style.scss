@@ -1757,15 +1757,26 @@ section[name="card"] {
 // -------------------------------ürün detay sayfası--------------------------------
 //ürün detay slayder
 
+
 .product_detail_carousel {
   .swiper-button-prev:after {
     font-size: 20px;
-    transform: translate(-13px, 0px);
+    transform: translate(0px, 0px);
   }
 
   .swiper-button-next:after {
     font-size: 20px;
-    transform: translate(13px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 1px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 1px !important;
   }
 
   .product_photo_Detail_page {
@@ -1788,14 +1799,15 @@ section[name="card"] {
 // ürün sayısını artırma
 
 .prosuct_count_area {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
-  top: -106px;
+  position: absolute;
+  // width: 100%;
+  // display: flex;
+  // justify-content: flex-end;
+  // padding-right: 20px;
+  top: 462px;
+  right: 20px;
   z-index: 1;
-  margin-bottom: -135px;
+  // margin-bottom: -135px;
 
   .prosuct_count {
     width: 42px;
@@ -1842,6 +1854,7 @@ section[name="card"] {
 
 .product_information_txt {
   padding: 10px;
+  margin-top: -15px;
 
   h1 {
     font-size: 16px;
